@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Quotation — AI YouTube Title Optimizer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 13px;
+      color: #222;
+      background: #e8ecf0;
+      padding: 30px 16px;
+    }
+
+    /* ── PAGE SHELL ── */
+    .page {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      background: #fff;
+      padding: 56px 64px 48px;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.10);
+    }
+
+    /* ── RUNNING HEADER (shown from page 2 onwards via print) ── */
+    .running-header {
+      font-size: 11px;
+      color: #1a3a6e;
+      text-align: right;
+      font-style: italic;
+      margin-bottom: 28px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* ── COVER ── */
+    .cover-title {
+      font-size: 34px;
+      font-weight: 800;
+      color: #1a3a6e;
+      text-align: center;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .cover-rule {
+      width: 120px;
+      height: 3px;
+      background: #1a3a6e;
+      margin: 0 auto 36px;
+    }
+
+    .cover-subtitle {
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+      line-height: 1.7;
+      margin-bottom: 8px;
+    }
+
+    .cover-sub2 {
+      font-size: 13px;
+      color: #555;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    /* ── INFO CARD (cover) ── */
+    .info-card {
+      border: 1px solid #b0bec5;
+      border-radius: 4px;
+      padding: 24px 28px;
+      max-width: 480px;
+      margin: 0 auto 52px;
+    }
+
+    .info-card table { width: 100%; border-collapse: collapse; }
+    .info-card td { padding: 5px 0; font-size: 13px; vertical-align: top; }
+    .info-card td:first-child {
+      font-weight: 700;
+      color: #1a3a6e;
+      width: 130px;
+      padding-right: 16px;
+    }
+
+    .cover-confidential {
+      text-align: center;
+      font-style: italic;
+      color: #888;
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    .cover-page-num {
+      text-align: center;
+      font-style: italic;
+      color: #aaa;
+      font-size: 11px;
+    }
+
+    /* ── SECTION TITLES ── */
+    .section {
+      margin-bottom: 36px;
+    }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a3a6e;
+      border-bottom: 2px solid #1a3a6e;
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+    }
+
+    .section p {
+      font-size: 13px;
+      color: #333;
+      line-height: 1.75;
+      margin-bottom: 10px;
+    }
+
+    /* ── TABLES ── */
+    table.std {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+      margin-bottom: 20px;
+    }
+
+    table.std thead tr {
+      background: #1a3a6e;
+      color: #fff;
+    }
+
+    table.std thead th {
+      padding: 9px 14px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    table.std thead th:last-child { text-align: right; }
+
+    table.std tbody tr:nth-child(even) { background: #f0f4f8; }
+
+    table.std tbody td {
+      padding: 8px 14px;
+      color: #333;
+      border-bottom: 1px solid #dde3ea;
+      line-height: 1.5;
+    }
+
+    table.std tbody td:last-child { text-align: right; font-weight: 600; }
+
+    table.std .highlight-row td {
+      background: #1a3a6e;
+      color: #fff;
+      font-weight: 700;
+      font-size: 13.5px;
+    }
+
+    table.std .highlight-row td:last-child { text-align: right; }
+
+    table.std .accent-row td {
+      background: #e8f0fb;
+      color: #1a3a6e;
+      font-weight: 700;
+    }
+
+    /* ── DELIVERABLE GROUPS ── */
+    .del-group { margin-bottom: 22px; }
+
+    .del-group h4 {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #1a3a6e;
+      background: #eef2f9;
+      padding: 7px 12px;
+      border-left: 3px solid #1a3a6e;
+      margin-bottom: 0;
+    }
+
+    .del-group table.std thead th { font-size: 11.5px; }
+
+    /* ── PAYMENT CARDS ── */
+    .payment-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .pay-card {
+      border: 1px solid #b0bec5;
+      border-radius: 4px;
+      padding: 16px 18px;
+    }
+
+    .pay-card .stage-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #1a3a6e;
+      background: #eef2f9;
+      border-radius: 3px;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+
+    .pay-card .due-now {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #fff;
+      background: #c0392b;
+      border-radius: 3px;
+      padding: 2px 8px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    .pay-card .pct { font-size: 26px; font-weight: 800; color: #1a3a6e; }
+    .pay-card .amt { font-size: 15px; font-weight: 700; color: #222; margin-top: 2px; }
+    .pay-card .trigger { font-size: 12px; font-weight: 700; color: #333; margin-top: 8px; }
+    .pay-card .lbl { font-size: 11px; color: #666; margin-top: 3px; line-height: 1.5; }
+
+    /* ── TERMS LIST ── */
+    .terms-list { padding-left: 20px; }
+    .terms-list li {
+      font-size: 12.5px;
+      color: #333;
+      line-height: 1.75;
+      margin-bottom: 4px;
+    }
+
+    /* ── HOW TO PROCEED ── */
+    .steps { padding-left: 0; list-style: none; }
+    .steps li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 13px;
+      color: #333;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .steps li .num {
+      background: #1a3a6e;
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── CONTACT CARD ── */
+    .contact-card {
+      border: 1px solid #b0bec5;
+      border-radius: 4px;
+      padding: 22px 28px;
+      max-width: 400px;
+    }
+
+    .contact-card table { width: 100%; border-collapse: collapse; }
+    .contact-card td { padding: 5px 0; font-size: 13px; vertical-align: top; }
+    .contact-card td:first-child {
+      font-weight: 700;
+      color: #1a3a6e;
+      width: 100px;
+    }
+
+    .thank-you {
+      font-style: italic;
+      color: #888;
+      font-size: 12.5px;
+      text-align: center;
+      margin-top: 36px;
+    }
+
+    /* ── PAGE FOOTER ── */
+    .page-footer {
+      text-align: center;
+      font-style: italic;
+      color: #bbb;
+      font-size: 11px;
+      margin-top: 48px;
+    }
+
+    /* ── DIVIDER ── */
+    .page-break { border: none; border-top: 1px dashed #ccc; margin: 48px 0; }
+
+    /* ── PRINT ── */
+    @media print {
+      body { background: #fff; padding: 0; }
+      .page { box-shadow: none; padding: 40px 52px; margin: 0; }
+      .page-break { page-break-after: always; border: none; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ══════════════════════════════════════════
+       COVER PAGE
+  ══════════════════════════════════════════ -->
+  <div class="cover-title">PROJECT QUOTATION</div>
+  <div class="cover-rule"></div>
+
+  <div class="cover-subtitle">
+    AI-Powered YouTube Title Optimizer<br>
+    Multi-Agent System + Machine Learning Module + Full Thesis
+  </div>
+  <div class="cover-sub2">BSc (Hons) Software Engineering Research Project</div>
+
+  <div class="info-card">
+    <table>
+      <tr>
+        <td>Prepared by:</td>
+        <td>Dulhara</td>
+      </tr>
+      <tr>
+        <td>Prepared for:</td>
+        <td>P.A.D.B. Pathiraja (29071)</td>
+      </tr>
+      <tr>
+        <td>Institution:</td>
+        <td>NSBM Green University</td>
+      </tr>
+      <tr>
+        <td>Date:</td>
+        <td>28th June 2026</td>
+      </tr>
+      <tr>
+        <td>Valid until:</td>
+        <td>28th July 2026</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="cover-confidential">Confidential — For intended recipient only</div>
+  <div class="cover-page-num">Page 1 / 4</div>
+
+  <hr class="page-break" />
+
+  <!-- ══════════════════════════════════════════
+       PAGE 2 — OVERVIEW + DELIVERABLES
+  ══════════════════════════════════════════ -->
+  <div class="running-header">Quotation — AI-Powered YouTube Title Optimizer</div>
+
+  <!-- 1. Project Overview -->
+  <div class="section">
+    <div class="section-title">1. Project Overview</div>
+    <p>
+      Development of an AI-powered, multi-agent system that automatically analyzes a YouTube video's content
+      and generates psychologically optimized, virality-engineered titles — for a BSc (Hons) Software
+      Engineering research project at NSBM Green University.
+    </p>
+    <p>
+      The system covers a LangChain multi-agent pipeline (Analyzer, Generator, Critic agents), a Predicted CTR
+      (pCTR) machine learning model (Random Forest / XGBoost), an NLP evaluation layer (VADER sentiment,
+      BERTScore, NLI faithfulness check), and a FastAPI REST backend. Built with AI-assisted tooling and
+      scoped as a fully functional research prototype sufficient to complete and defend the thesis.
+    </p>
+    <p>
+      A complete thesis document covering all chapters (Introduction through Conclusion) and 8 included
+      mentorship sessions are provided alongside the system.
+    </p>
+  </div>
+
+  <!-- 2. Deliverables -->
+  <div class="section">
+    <div class="section-title">2. Deliverables</div>
+
+    <!-- System Prototype -->
+    <div class="del-group">
+      <h4>Deliverable 1 — System Prototype</h4>
+      <table class="std">
+        <thead>
+          <tr><th>Component</th><th>Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Analyzer Agent</td><td>Extracts core video promise, key entities, emotional potential, and applicable psychological triggers from transcript / description</td></tr>
+          <tr><td>Generator Agent</td><td>Produces 5 candidate titles per run, each targeting a different psychological trigger (curiosity gap, loss aversion, social proof, urgency, extreme framing)</td></tr>
+          <tr><td>Critic Agent</td><td>Scores candidates with pCTR model, VADER arousal check, BERTScore relevance, and NLI deception detection — auto-rejects contradictory titles</td></tr>
+          <tr><td>pCTR ML Model</td><td>Random Forest / XGBoost trained on YouTube trending dataset with engineered title features</td></tr>
+          <tr><td>NLP Layer</td><td>VADER sentiment scoring, BERTScore relevance filter, NLI faithfulness gate (prevents AI-hallucinated titles)</td></tr>
+          <tr><td>FastAPI Backend</td><td>Async REST API exposing the full pipeline as a clean endpoint</td></tr>
+          <tr><td>YouTube API Integration</td><td>Dataset collection pipeline via YouTube Data API v3</td></tr>
+          <tr><td>Demo &amp; Evaluation</td><td>Working demo with ranked title outputs, evaluation metrics, and sample results</td></tr>
+          <tr><td>Source Code</td><td>Complete, documented — delivered via private GitHub repository</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Thesis -->
+    <div class="del-group">
+      <h4>Deliverable 2 — Full Thesis Document</h4>
+      <table class="std">
+        <thead>
+          <tr><th>Chapter</th><th>Content</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Chapter 1 — Introduction</td><td>Background, problem statement, research objectives, scope, and significance</td></tr>
+          <tr><td>Chapter 2 — Literature Review</td><td>Information Gap Theory, psychological triggers, YouTube algorithm research, clickbait studies, existing NLP tools — all cited from academic sources</td></tr>
+          <tr><td>Chapter 3 — Methodology</td><td>Research design, dataset selection and justification, system architecture rationale, agent design decisions</td></tr>
+          <tr><td>Chapter 4 — System Design &amp; Implementation</td><td>Component diagrams, agent pipeline walkthrough, technology stack justification, ML model design</td></tr>
+          <tr><td>Chapter 5 — Results &amp; Evaluation</td><td>pCTR model metrics, VADER scores, NLI validation results, sample title output comparison</td></tr>
+          <tr><td>Chapter 6 — Conclusion</td><td>Summary of findings, research contributions, limitations, and future work</td></tr>
+          <tr><td>References &amp; Bibliography</td><td>IEEE format, fully cited — 20+ academic sources</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Supporting Docs -->
+    <div class="del-group">
+      <h4>Deliverable 3 — Supporting Documentation</h4>
+      <table class="std">
+        <thead>
+          <tr><th>Item</th><th>Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Architecture Diagrams</td><td>Agent flow diagram, system component diagram, data flow diagram</td></tr>
+          <tr><td>Evaluation Report</td><td>Model accuracy metrics, confusion matrices, sample title outputs with scores</td></tr>
+          <tr><td>README</td><td>Setup and run instructions for the full prototype</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="page-footer">Page 2 / 4</div>
+
+  <hr class="page-break" />
+
+  <!-- ══════════════════════════════════════════
+       PAGE 3 — MENTORSHIP + COST + PAYMENT
+  ══════════════════════════════════════════ -->
+  <div class="running-header">Quotation — AI-Powered YouTube Title Optimizer</div>
+
+  <!-- 3. Mentorship Sessions -->
+  <div class="section">
+    <div class="section-title">3. Mentorship Sessions</div>
+
+    <p><strong>Included Sessions (8 sessions — provided after system delivery)</strong></p>
+    <p style="margin-bottom:12px;">Sessions are conducted online via Google Meet / Zoom. Duration: 1–1.5 hours each. Scheduled bi-weekly or as agreed.</p>
+
+    <table class="std" style="margin-bottom:24px;">
+      <thead>
+        <tr>
+          <th style="width:40px; text-align:center;">#</th>
+          <th>Topic</th>
+          <th style="text-align:left;">What You Will Be Able to Do After</th>
+          <th style="width:80px;">Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:center; font-weight:700; color:#1a3a6e;">1</td>
+          <td>Project Overview &amp; Research Context</td>
+          <td style="text-align:left;">Explain the problem, research gap, and why this project is novel</td>
+          <td style="text-align:right;">1 hr</td>
+        </tr>
+        <tr>
+          <td style="text-align:center; font-weight:700; color:#1a3a6e;">2</td>
+          <td>Theoretical Foundations</td>
+          <td style="text-align:left;">Articulate Information Gap Theory, Loss Aversion, and Social Proof in your own words</td>
+          <td style="text-align:right;">1 hr</td>
+        </tr>
+        <tr>
+          <td style="text-align:center; font-weight:700; color:#1a3a6e;">3</td>
+          <td>Dataset &amp; ML Model Walkthrough</td>
+          <td style="text-align:left;">Explain dataset pipeline, feature engineering, and pCTR model training</td>
+          <td style="text-align:right;">1 hr</td>
+        </tr>
+        <tr>
+          <td style="text-align:center; font-weight:700; color:#1a3a6e;">4</td>
+          <td>NLP Layer Deep Dive</td>
+          <td style="text-align:left;">Explain VADER, BERTScore, and NLI — what each measures and why all three are needed</td>
+          <td style="text-align:right;">1 hr</td>
+        </tr>
+        <tr>
+          <td style="text-align:center; font-weight:700; color:#1a3a6e;">5</td>
+          <td>Multi-Agent System Architecture</td>
+          <td style="text-align:left;">Walk through the LangChain pipeline, agent roles, and end-to-end data flow</td>
+          <td style="text-align:right;">1.5 hrs</td>
+        </tr>
+        <tr>
+          <td style="text-align:center; font-weight:700; color:#1a3a6e;">6</td>
+          <td>Results Interpretation &amp; Evaluation</td>
+          <td style="text-align:left;">Present and discuss model evaluation metrics and output quality</td>
+          <td style="text-align:right;">1 hr</td>
+        </tr>
+        <tr>
+          <td style="text-align:center; font-weight:700; color:#1a3a6e;">7</td>
+          <td>Viva Preparation — Technical Q&amp;A</td>
+          <td style="text-align:left;">Confidently answer examiner questions on methodology and design decisions</td>
+          <td style="text-align:right;">1.5 hrs</td>
+        </tr>
+        <tr>
+          <td style="text-align:center; font-weight:700; color:#1a3a6e;">8</td>
+          <td>Final Presentation Coaching</td>
+          <td style="text-align:left;">Deliver a clear, confident project presentation within the time limit</td>
+          <td style="text-align:right;">1.5 hrs</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Paid Sessions (Optional)</strong></p>
+    <p style="margin-bottom:12px;">For topics requiring deeper line-by-line explanation or additional mock viva practice beyond the included sessions.</p>
+
+    <table class="std">
+      <thead>
+        <tr>
+          <th>Session Type</th>
+          <th>Rate (LKR)</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>System architecture deep dive (additional)</td><td>2,000</td><td>1–1.5 hrs</td></tr>
+        <tr><td>ML model internals &amp; code walkthrough</td><td>2,000</td><td>1–1.5 hrs</td></tr>
+        <tr><td>NLP pipeline code walkthrough (line by line)</td><td>1,500</td><td>1–1.5 hrs</td></tr>
+        <tr><td>Evaluation metrics (F1, ROC-AUC, confusion matrix)</td><td>1,500</td><td>1–1.5 hrs</td></tr>
+        <tr><td>Mock Viva / Q&amp;A Practice</td><td>2,500</td><td>1–2 hrs</td></tr>
+        <tr><td>Thesis Defense Coaching</td><td>2,500</td><td>1–2 hrs</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 4. Cost Breakdown -->
+  <div class="section">
+    <div class="section-title">4. Cost Breakdown</div>
+    <table class="std">
+      <thead>
+        <tr>
+          <th>Deliverable</th>
+          <th>Details</th>
+          <th>Price (LKR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>System Prototype Development</td>
+          <td>Multi-agent pipeline, ML model, NLP layer, FastAPI backend, demo</td>
+          <td>40,000</td>
+        </tr>
+        <tr>
+          <td>Full Thesis Document</td>
+          <td>All 6 chapters — Introduction through Conclusion, IEEE references</td>
+          <td>25,000</td>
+        </tr>
+        <tr>
+          <td>Supporting Documentation</td>
+          <td>Architecture diagrams, evaluation report, README</td>
+          <td>5,000</td>
+        </tr>
+        <tr>
+          <td>Mentorship Sessions (× 8)</td>
+          <td>8 guided sessions covering theory, system, results, and viva prep</td>
+          <td>15,000</td>
+        </tr>
+        <tr class="highlight-row">
+          <td colspan="2">TOTAL</td>
+          <td>LKR 85,000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="page-footer">Page 3 / 4</div>
+
+  <hr class="page-break" />
+
+  <!-- ══════════════════════════════════════════
+       PAGE 4 — PAYMENT + TERMS + CONTACT
+  ══════════════════════════════════════════ -->
+  <div class="running-header">Quotation — AI-Powered YouTube Title Optimizer</div>
+
+  <!-- 5. Payment Terms -->
+  <div class="section">
+    <div class="section-title">5. Payment Terms</div>
+
+    <div class="payment-grid">
+      <!-- Stage 1 -->
+      <div class="pay-card">
+        <div>
+          <span class="stage-badge">Stage 1</span>
+          <span class="due-now">Due Now</span>
+        </div>
+        <div class="pct">30%</div>
+        <div class="amt">LKR 25,500</div>
+        <div class="trigger">Interim Submission 01 Delivered</div>
+        <div class="lbl">Chapters 1, 2 &amp; 3 complete — thesis DOCX submitted to university</div>
+      </div>
+      <!-- Stage 2 -->
+      <div class="pay-card">
+        <div><span class="stage-badge">Stage 2</span></div>
+        <div class="pct">40%</div>
+        <div class="amt">LKR 34,000</div>
+        <div class="trigger">System Prototype Delivered</div>
+        <div class="lbl">All agents + FastAPI endpoint live + Chapters 4 &amp; 5 written (~21 Aug 2026)</div>
+      </div>
+      <!-- Stage 3 -->
+      <div class="pay-card">
+        <div><span class="stage-badge">Stage 3</span></div>
+        <div class="pct">30%</div>
+        <div class="amt">LKR 25,500</div>
+        <div class="trigger">Final Delivery</div>
+        <div class="lbl">Complete thesis (Ch 6 &amp; 7) + private GitHub repository handed over (~28 Aug 2026)</div>
+      </div>
+    </div>
+
+    <p style="margin-bottom: 14px; font-size:12.5px; color:#555;">
+      — Each stage payment is due within 48 hours of the corresponding milestone delivery<br>
+      — Paid mentorship sessions are prepaid before booking<br>
+      — All sessions conducted via Google Meet / Zoom
+    </p>
+
+    <p style="font-weight:700; margin-bottom:8px;">Additional Charges</p>
+    <table class="std">
+      <thead>
+        <tr><th>Item</th><th>Rate</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Urgent delivery (less than 50% of agreed timeline)</td><td>+25% of package price</td></tr>
+        <tr><td>Additional mentorship sessions</td><td>As per paid session rates above</td></tr>
+        <tr><td>Scope changes after project kickoff</td><td>Quoted separately</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 6. Terms & Conditions -->
+  <div class="section">
+    <div class="section-title">6. Terms &amp; Conditions</div>
+    <ol class="terms-list">
+      <li>This quotation is valid for 30 days from the date of issue.</li>
+      <li>Payments are structured in three stages tied to deliverable milestones — Stage 1 (30%) on Interim Submission, Stage 2 (40%) on system prototype + Ch4&amp;5, Stage 3 (30%) on final thesis + repository. Each payment is due within 48 hours of milestone delivery.</li>
+      <li>Each stage's deliverables are handed over upon confirmation of the corresponding stage payment. Next-stage work begins only after the current stage payment is received.</li>
+      <li>Included mentorship sessions commence after Stage 3 (final delivery) payment is received.</li>
+      <li>Quick doubts via WhatsApp / chat are supported. Detailed explanations require a paid session.</li>
+      <li>All sessions are conducted online (Google Meet / Zoom). In-person sessions require prior arrangement.</li>
+      <li>Client is responsible for their own academic submission and integrity.</li>
+      <li>Source code and documents are for client's personal academic use only and shall not be resold or redistributed.</li>
+      <li>Any scope changes after project kickoff may result in revised pricing.</li>
+      <li>This quotation covers a research prototype — not a production-grade or commercially deployed system.</li>
+    </ol>
+  </div>
+
+  <!-- 7. How to Proceed -->
+  <div class="section">
+    <div class="section-title">7. How to Proceed</div>
+    <ul class="steps">
+      <li><span class="num">1</span> Confirm via WhatsApp or Email to proceed</li>
+      <li><span class="num">2</span> <strong>Stage 1 (LKR 25,500)</strong> — Pay within 48 hrs of receiving Interim Submission 01 (Ch1+2+3 DOCX) — <em>due now</em></li>
+      <li><span class="num">3</span> <strong>Stage 2 (LKR 34,000)</strong> — Pay within 48 hrs of receiving the working system prototype + Chapters 4 &amp; 5 (~21 Aug 2026)</li>
+      <li><span class="num">4</span> <strong>Stage 3 (LKR 25,500)</strong> — Pay within 48 hrs of receiving final thesis (Ch6+7) + private GitHub repository (~28 Aug 2026)</li>
+      <li><span class="num">5</span> Mentorship sessions (8 included) scheduled at your convenience after Stage 3</li>
+    </ul>
+  </div>
+
+  <!-- 8. Contact Information -->
+  <div class="section">
+    <div class="section-title">8. Contact Information</div>
+    <div class="contact-card">
+      <table>
+        <tr><td>Name:</td><td>Dulhara</td></tr>
+        <tr><td>WhatsApp:</td><td>070 575 2145</td></tr>
+        <tr><td>Email:</td><td>wkldulhara@gmail.com</td></tr>
+        <tr><td>Website:</td><td>dulharalakshan.me</td></tr>
+        <tr><td>LinkedIn:</td><td>linkedin.com/in/dulhara-lakshan</td></tr>
+        <tr><td>GitHub:</td><td>github.com/dulhara19</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="thank-you">Thank you for your interest. Looking forward to working with you!</div>
+
+  <div class="page-footer" style="margin-top:28px;">Page 4 / 4</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+# Secrets
+.env
+system/.env
+*.env
+!*.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Vector store (regenerable from system/data/prompt_db/labeled_examples.csv)
+system/data/prompt_db/chroma/
+
+# OS
+.DS_Store
+Thumbs.db

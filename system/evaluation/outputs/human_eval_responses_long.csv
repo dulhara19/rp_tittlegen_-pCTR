@@ -1,0 +1,1042 @@
+participant_id,video_id,blinded_label,dimension,rating
+PEOGEN,1,title_1,curiosity,2
+PEOGEN,1,title_1,emotional_impact,2
+PEOGEN,1,title_1,clarity,3
+PEOGEN,1,title_1,trustworthiness,2
+PEOGEN,1,title_2,curiosity,1
+PEOGEN,1,title_2,emotional_impact,1
+PEOGEN,1,title_2,clarity,1
+PEOGEN,1,title_2,trustworthiness,1
+PEOGEN,1,title_3,curiosity,2
+PEOGEN,1,title_3,emotional_impact,3
+PEOGEN,1,title_3,clarity,2
+PEOGEN,1,title_3,trustworthiness,2
+PEOGEN,3,title_1,curiosity,3
+PEOGEN,3,title_1,emotional_impact,2
+PEOGEN,3,title_1,clarity,3
+PEOGEN,3,title_1,trustworthiness,3
+PEOGEN,3,title_2,curiosity,2
+PEOGEN,3,title_2,emotional_impact,3
+PEOGEN,3,title_2,clarity,3
+PEOGEN,3,title_2,trustworthiness,2
+PEOGEN,3,title_3,curiosity,4
+PEOGEN,3,title_3,emotional_impact,5
+PEOGEN,3,title_3,clarity,5
+PEOGEN,3,title_3,trustworthiness,3
+PEOGEN,6,title_1,curiosity,3
+PEOGEN,6,title_1,emotional_impact,2
+PEOGEN,6,title_1,clarity,3
+PEOGEN,6,title_1,trustworthiness,3
+PEOGEN,6,title_2,curiosity,5
+PEOGEN,6,title_2,emotional_impact,5
+PEOGEN,6,title_2,clarity,5
+PEOGEN,6,title_2,trustworthiness,2
+PEOGEN,6,title_3,curiosity,3
+PEOGEN,6,title_3,emotional_impact,3
+PEOGEN,6,title_3,clarity,2
+PEOGEN,6,title_3,trustworthiness,3
+Maheesha,1,title_1,curiosity,5
+Maheesha,1,title_1,emotional_impact,5
+Maheesha,1,title_1,clarity,4
+Maheesha,1,title_1,trustworthiness,4
+Maheesha,1,title_2,curiosity,4
+Maheesha,1,title_2,emotional_impact,5
+Maheesha,1,title_2,clarity,4
+Maheesha,1,title_2,trustworthiness,4
+Maheesha,1,title_3,curiosity,4
+Maheesha,1,title_3,emotional_impact,4
+Maheesha,1,title_3,clarity,4
+Maheesha,1,title_3,trustworthiness,4
+Maheesha,3,title_1,curiosity,4
+Maheesha,3,title_1,emotional_impact,4
+Maheesha,3,title_1,clarity,4
+Maheesha,3,title_1,trustworthiness,3
+Maheesha,3,title_2,curiosity,4
+Maheesha,3,title_2,emotional_impact,5
+Maheesha,3,title_2,clarity,4
+Maheesha,3,title_2,trustworthiness,4
+Maheesha,3,title_3,curiosity,4
+Maheesha,3,title_3,emotional_impact,4
+Maheesha,3,title_3,clarity,4
+Maheesha,3,title_3,trustworthiness,4
+Maheesha,6,title_1,curiosity,4
+Maheesha,6,title_1,emotional_impact,4
+Maheesha,6,title_1,clarity,5
+Maheesha,6,title_1,trustworthiness,5
+Maheesha,6,title_2,curiosity,4
+Maheesha,6,title_2,emotional_impact,4
+Maheesha,6,title_2,clarity,5
+Maheesha,6,title_2,trustworthiness,4
+Maheesha,6,title_3,curiosity,4
+Maheesha,6,title_3,emotional_impact,4
+Maheesha,6,title_3,clarity,5
+Maheesha,6,title_3,trustworthiness,4
+Radeesha,1,title_1,curiosity,4
+Radeesha,1,title_1,emotional_impact,5
+Radeesha,1,title_1,clarity,3
+Radeesha,1,title_1,trustworthiness,4
+Radeesha,1,title_2,curiosity,4
+Radeesha,1,title_2,emotional_impact,3
+Radeesha,1,title_2,clarity,5
+Radeesha,1,title_2,trustworthiness,4
+Radeesha,1,title_3,curiosity,4
+Radeesha,1,title_3,emotional_impact,5
+Radeesha,1,title_3,clarity,3
+Radeesha,1,title_3,trustworthiness,4
+Radeesha,3,title_1,curiosity,4
+Radeesha,3,title_1,emotional_impact,5
+Radeesha,3,title_1,clarity,4
+Radeesha,3,title_1,trustworthiness,5
+Radeesha,3,title_2,curiosity,4
+Radeesha,3,title_2,emotional_impact,5
+Radeesha,3,title_2,clarity,3
+Radeesha,3,title_2,trustworthiness,4
+Radeesha,3,title_3,curiosity,4
+Radeesha,3,title_3,emotional_impact,5
+Radeesha,3,title_3,clarity,3
+Radeesha,3,title_3,trustworthiness,4
+Radeesha,6,title_1,curiosity,4
+Radeesha,6,title_1,emotional_impact,5
+Radeesha,6,title_1,clarity,3
+Radeesha,6,title_1,trustworthiness,5
+Radeesha,6,title_2,curiosity,3
+Radeesha,6,title_2,emotional_impact,4
+Radeesha,6,title_2,clarity,5
+Radeesha,6,title_2,trustworthiness,4
+Radeesha,6,title_3,curiosity,3
+Radeesha,6,title_3,emotional_impact,4
+Radeesha,6,title_3,clarity,4
+Radeesha,6,title_3,trustworthiness,4
+Isuru Sampath,1,title_1,curiosity,4
+Isuru Sampath,1,title_1,emotional_impact,4
+Isuru Sampath,1,title_1,clarity,4
+Isuru Sampath,1,title_1,trustworthiness,3
+Isuru Sampath,1,title_2,curiosity,3
+Isuru Sampath,1,title_2,emotional_impact,3
+Isuru Sampath,1,title_2,clarity,4
+Isuru Sampath,1,title_2,trustworthiness,3
+Isuru Sampath,1,title_3,curiosity,3
+Isuru Sampath,1,title_3,emotional_impact,3
+Isuru Sampath,1,title_3,clarity,3
+Isuru Sampath,1,title_3,trustworthiness,3
+Isuru Sampath,3,title_1,curiosity,4
+Isuru Sampath,3,title_1,emotional_impact,4
+Isuru Sampath,3,title_1,clarity,4
+Isuru Sampath,3,title_1,trustworthiness,4
+Isuru Sampath,3,title_2,curiosity,4
+Isuru Sampath,3,title_2,emotional_impact,4
+Isuru Sampath,3,title_2,clarity,4
+Isuru Sampath,3,title_2,trustworthiness,4
+Isuru Sampath,3,title_3,curiosity,4
+Isuru Sampath,3,title_3,emotional_impact,4
+Isuru Sampath,3,title_3,clarity,4
+Isuru Sampath,3,title_3,trustworthiness,4
+Isuru Sampath,6,title_1,curiosity,5
+Isuru Sampath,6,title_1,emotional_impact,5
+Isuru Sampath,6,title_1,clarity,2
+Isuru Sampath,6,title_1,trustworthiness,4
+Isuru Sampath,6,title_2,curiosity,5
+Isuru Sampath,6,title_2,emotional_impact,5
+Isuru Sampath,6,title_2,clarity,3
+Isuru Sampath,6,title_2,trustworthiness,2
+Isuru Sampath,6,title_3,curiosity,5
+Isuru Sampath,6,title_3,emotional_impact,5
+Isuru Sampath,6,title_3,clarity,2
+Isuru Sampath,6,title_3,trustworthiness,5
+Nethmini,1,title_1,curiosity,4
+Nethmini,1,title_1,emotional_impact,3
+Nethmini,1,title_1,clarity,4
+Nethmini,1,title_1,trustworthiness,4
+Nethmini,1,title_2,curiosity,4
+Nethmini,1,title_2,emotional_impact,3
+Nethmini,1,title_2,clarity,4
+Nethmini,1,title_2,trustworthiness,4
+Nethmini,1,title_3,curiosity,4
+Nethmini,1,title_3,emotional_impact,3
+Nethmini,1,title_3,clarity,4
+Nethmini,1,title_3,trustworthiness,4
+Nethmini,3,title_1,curiosity,4
+Nethmini,3,title_1,emotional_impact,4
+Nethmini,3,title_1,clarity,4
+Nethmini,3,title_1,trustworthiness,4
+Nethmini,3,title_2,curiosity,4
+Nethmini,3,title_2,emotional_impact,4
+Nethmini,3,title_2,clarity,4
+Nethmini,3,title_2,trustworthiness,4
+Nethmini,3,title_3,curiosity,4
+Nethmini,3,title_3,emotional_impact,4
+Nethmini,3,title_3,clarity,4
+Nethmini,3,title_3,trustworthiness,4
+Nethmini,6,title_1,curiosity,4
+Nethmini,6,title_1,clarity,4
+Nethmini,6,title_1,trustworthiness,4
+Nethmini,6,title_2,curiosity,4
+Nethmini,6,title_2,emotional_impact,4
+Nethmini,6,title_2,clarity,4
+Nethmini,6,title_2,trustworthiness,4
+Nethmini,6,title_3,curiosity,4
+Nethmini,6,title_3,emotional_impact,4
+Nethmini,6,title_3,clarity,4
+Nethmini,6,title_3,trustworthiness,4
+Smd,1,title_1,curiosity,5
+Smd,1,title_1,emotional_impact,4
+Smd,1,title_1,clarity,5
+Smd,1,title_1,trustworthiness,5
+Smd,1,title_2,curiosity,4
+Smd,1,title_2,emotional_impact,4
+Smd,1,title_2,clarity,5
+Smd,1,title_2,trustworthiness,3
+Smd,1,title_3,curiosity,4
+Smd,1,title_3,emotional_impact,4
+Smd,1,title_3,clarity,5
+Smd,1,title_3,trustworthiness,4
+Smd,3,title_1,curiosity,4
+Smd,3,title_1,emotional_impact,4
+Smd,3,title_1,clarity,4
+Smd,3,title_1,trustworthiness,4
+Smd,3,title_2,curiosity,4
+Smd,3,title_2,emotional_impact,4
+Smd,3,title_2,clarity,4
+Smd,3,title_2,trustworthiness,3
+Smd,3,title_3,curiosity,3
+Smd,3,title_3,emotional_impact,3
+Smd,3,title_3,clarity,5
+Smd,3,title_3,trustworthiness,4
+Smd,6,title_1,curiosity,3
+Smd,6,title_1,emotional_impact,4
+Smd,6,title_1,clarity,4
+Smd,6,title_1,trustworthiness,4
+Smd,6,title_2,curiosity,5
+Smd,6,title_2,emotional_impact,4
+Smd,6,title_2,clarity,5
+Smd,6,title_2,trustworthiness,4
+Smd,6,title_3,curiosity,3
+Smd,6,title_3,emotional_impact,4
+Smd,6,title_3,clarity,4
+Smd,6,title_3,trustworthiness,3
+Isuru Karunarathne,1,title_1,curiosity,3
+Isuru Karunarathne,1,title_1,emotional_impact,2
+Isuru Karunarathne,1,title_1,clarity,5
+Isuru Karunarathne,1,title_1,trustworthiness,4
+Isuru Karunarathne,1,title_2,curiosity,3
+Isuru Karunarathne,1,title_2,emotional_impact,2
+Isuru Karunarathne,1,title_2,clarity,5
+Isuru Karunarathne,1,title_2,trustworthiness,4
+Isuru Karunarathne,1,title_3,curiosity,4
+Isuru Karunarathne,1,title_3,emotional_impact,4
+Isuru Karunarathne,1,title_3,clarity,5
+Isuru Karunarathne,1,title_3,trustworthiness,5
+Isuru Karunarathne,3,title_1,curiosity,2
+Isuru Karunarathne,3,title_1,emotional_impact,2
+Isuru Karunarathne,3,title_1,clarity,2
+Isuru Karunarathne,3,title_1,trustworthiness,1
+Isuru Karunarathne,3,title_2,curiosity,2
+Isuru Karunarathne,3,title_2,emotional_impact,2
+Isuru Karunarathne,3,title_2,clarity,1
+Isuru Karunarathne,3,title_2,trustworthiness,1
+Isuru Karunarathne,3,title_3,curiosity,4
+Isuru Karunarathne,3,title_3,emotional_impact,3
+Isuru Karunarathne,3,title_3,clarity,5
+Isuru Karunarathne,3,title_3,trustworthiness,4
+Isuru Karunarathne,6,title_1,curiosity,1
+Isuru Karunarathne,6,title_1,emotional_impact,1
+Isuru Karunarathne,6,title_1,clarity,2
+Isuru Karunarathne,6,title_1,trustworthiness,1
+Isuru Karunarathne,6,title_2,curiosity,4
+Isuru Karunarathne,6,title_2,emotional_impact,3
+Isuru Karunarathne,6,title_2,clarity,5
+Isuru Karunarathne,6,title_2,trustworthiness,2
+Isuru Karunarathne,6,title_3,curiosity,5
+Isuru Karunarathne,6,title_3,emotional_impact,4
+Isuru Karunarathne,6,title_3,clarity,5
+Isuru Karunarathne,6,title_3,trustworthiness,5
+Ranjani,1,title_1,curiosity,4
+Ranjani,1,title_1,emotional_impact,5
+Ranjani,1,title_1,clarity,5
+Ranjani,1,title_1,trustworthiness,3
+Ranjani,1,title_2,curiosity,4
+Ranjani,1,title_2,emotional_impact,3
+Ranjani,1,title_2,clarity,4
+Ranjani,1,title_2,trustworthiness,4
+Ranjani,1,title_3,curiosity,5
+Ranjani,1,title_3,emotional_impact,5
+Ranjani,1,title_3,clarity,4
+Ranjani,1,title_3,trustworthiness,3
+Ranjani,3,title_1,curiosity,2
+Ranjani,3,title_1,emotional_impact,3
+Ranjani,3,title_1,clarity,4
+Ranjani,3,title_1,trustworthiness,3
+Ranjani,3,title_2,curiosity,1
+Ranjani,3,title_2,emotional_impact,3
+Ranjani,3,title_2,clarity,2
+Ranjani,3,title_2,trustworthiness,2
+Ranjani,3,title_3,curiosity,5
+Ranjani,3,title_3,emotional_impact,3
+Ranjani,3,title_3,clarity,1
+Ranjani,3,title_3,trustworthiness,1
+Ranjani,6,title_1,curiosity,5
+Ranjani,6,title_1,emotional_impact,5
+Ranjani,6,title_1,clarity,5
+Ranjani,6,title_1,trustworthiness,4
+Ranjani,6,title_2,curiosity,2
+Ranjani,6,title_2,emotional_impact,1
+Ranjani,6,title_2,clarity,4
+Ranjani,6,title_2,trustworthiness,5
+Ranjani,6,title_3,curiosity,5
+Ranjani,6,title_3,emotional_impact,5
+Ranjani,6,title_3,clarity,5
+Ranjani,6,title_3,trustworthiness,5
+Chamudi,1,title_1,curiosity,3
+Chamudi,1,title_1,emotional_impact,2
+Chamudi,1,title_1,clarity,3
+Chamudi,1,title_1,trustworthiness,2
+Chamudi,1,title_2,curiosity,3
+Chamudi,1,title_2,emotional_impact,3
+Chamudi,1,title_2,clarity,2
+Chamudi,1,title_2,trustworthiness,2
+Chamudi,1,title_3,curiosity,4
+Chamudi,1,title_3,emotional_impact,2
+Chamudi,1,title_3,clarity,3
+Chamudi,1,title_3,trustworthiness,2
+Chamudi,3,title_1,curiosity,2
+Chamudi,3,title_1,emotional_impact,3
+Chamudi,3,title_1,clarity,3
+Chamudi,3,title_1,trustworthiness,2
+Chamudi,3,title_2,curiosity,3
+Chamudi,3,title_2,emotional_impact,3
+Chamudi,3,title_2,clarity,2
+Chamudi,3,title_2,trustworthiness,3
+Chamudi,3,title_3,curiosity,2
+Chamudi,3,title_3,emotional_impact,3
+Chamudi,3,title_3,clarity,2
+Chamudi,3,title_3,trustworthiness,3
+Chamudi,6,title_1,curiosity,3
+Chamudi,6,title_1,emotional_impact,2
+Chamudi,6,title_1,clarity,2
+Chamudi,6,title_1,trustworthiness,3
+Chamudi,6,title_2,curiosity,3
+Chamudi,6,title_2,emotional_impact,2
+Chamudi,6,title_2,clarity,3
+Chamudi,6,title_2,trustworthiness,2
+Chamudi,6,title_3,curiosity,3
+Chamudi,6,title_3,emotional_impact,3
+Chamudi,6,title_3,clarity,2
+Chamudi,6,title_3,trustworthiness,2
+Pasindu,1,title_1,curiosity,3
+Pasindu,1,title_1,emotional_impact,3
+Pasindu,1,title_1,clarity,2
+Pasindu,1,title_1,trustworthiness,1
+Pasindu,1,title_2,curiosity,4
+Pasindu,1,title_2,emotional_impact,4
+Pasindu,1,title_2,clarity,4
+Pasindu,1,title_2,trustworthiness,4
+Pasindu,1,title_3,curiosity,2
+Pasindu,1,title_3,emotional_impact,2
+Pasindu,1,title_3,clarity,2
+Pasindu,1,title_3,trustworthiness,2
+Pasindu,3,title_1,curiosity,3
+Pasindu,3,title_1,emotional_impact,3
+Pasindu,3,title_1,clarity,3
+Pasindu,3,title_1,trustworthiness,3
+Pasindu,3,title_2,curiosity,4
+Pasindu,3,title_2,emotional_impact,4
+Pasindu,3,title_2,clarity,3
+Pasindu,3,title_2,trustworthiness,3
+Pasindu,3,title_3,curiosity,5
+Pasindu,3,title_3,emotional_impact,4
+Pasindu,3,title_3,clarity,3
+Pasindu,3,title_3,trustworthiness,3
+Pasindu,6,title_1,curiosity,3
+Pasindu,6,title_1,emotional_impact,3
+Pasindu,6,title_1,clarity,5
+Pasindu,6,title_1,trustworthiness,4
+Pasindu,6,title_2,curiosity,4
+Pasindu,6,title_2,emotional_impact,3
+Pasindu,6,title_2,clarity,3
+Pasindu,6,title_2,trustworthiness,4
+Pasindu,6,title_3,curiosity,3
+Pasindu,6,title_3,emotional_impact,3
+Pasindu,6,title_3,clarity,2
+Pasindu,6,title_3,trustworthiness,2
+Rana ig,1,title_1,curiosity,1
+Rana ig,1,title_1,emotional_impact,5
+Rana ig,1,title_1,clarity,5
+Rana ig,1,title_1,trustworthiness,5
+Rana ig,1,title_2,curiosity,5
+Rana ig,1,title_2,emotional_impact,5
+Rana ig,1,title_2,clarity,5
+Rana ig,1,title_2,trustworthiness,5
+Rana ig,1,title_3,curiosity,5
+Rana ig,1,title_3,emotional_impact,5
+Rana ig,1,title_3,clarity,5
+Rana ig,1,title_3,trustworthiness,5
+Rana ig,3,title_1,curiosity,5
+Rana ig,3,title_1,emotional_impact,5
+Rana ig,3,title_1,clarity,5
+Rana ig,3,title_1,trustworthiness,5
+Rana ig,3,title_2,curiosity,5
+Rana ig,3,title_2,emotional_impact,5
+Rana ig,3,title_2,clarity,5
+Rana ig,3,title_2,trustworthiness,5
+Rana ig,3,title_3,curiosity,5
+Rana ig,3,title_3,emotional_impact,5
+Rana ig,3,title_3,clarity,5
+Rana ig,3,title_3,trustworthiness,5
+Rana ig,6,title_1,curiosity,5
+Rana ig,6,title_1,emotional_impact,5
+Rana ig,6,title_1,clarity,5
+Rana ig,6,title_1,trustworthiness,5
+Rana ig,6,title_2,curiosity,5
+Rana ig,6,title_2,emotional_impact,5
+Rana ig,6,title_2,clarity,5
+Rana ig,6,title_2,trustworthiness,5
+Rana ig,6,title_3,curiosity,5
+Rana ig,6,title_3,emotional_impact,5
+Rana ig,6,title_3,clarity,5
+Rana ig,6,title_3,trustworthiness,5
+Pesandu Withana,1,title_1,curiosity,2
+Pesandu Withana,1,title_1,emotional_impact,3
+Pesandu Withana,1,title_1,clarity,1
+Pesandu Withana,1,title_1,trustworthiness,2
+Pesandu Withana,1,title_2,curiosity,2
+Pesandu Withana,1,title_2,emotional_impact,2
+Pesandu Withana,1,title_2,clarity,1
+Pesandu Withana,1,title_2,trustworthiness,2
+Pesandu Withana,1,title_3,curiosity,1
+Pesandu Withana,1,title_3,emotional_impact,1
+Pesandu Withana,1,title_3,clarity,1
+Pesandu Withana,1,title_3,trustworthiness,3
+Pesandu Withana,3,title_1,curiosity,3
+Pesandu Withana,3,title_1,emotional_impact,3
+Pesandu Withana,3,title_1,clarity,1
+Pesandu Withana,3,title_1,trustworthiness,2
+Pesandu Withana,3,title_2,curiosity,1
+Pesandu Withana,3,title_2,emotional_impact,1
+Pesandu Withana,3,title_2,clarity,1
+Pesandu Withana,3,title_2,trustworthiness,1
+Pesandu Withana,3,title_3,curiosity,2
+Pesandu Withana,3,title_3,emotional_impact,2
+Pesandu Withana,3,title_3,clarity,4
+Pesandu Withana,3,title_3,trustworthiness,3
+Pesandu Withana,6,title_1,curiosity,3
+Pesandu Withana,6,title_1,emotional_impact,2
+Pesandu Withana,6,title_1,clarity,4
+Pesandu Withana,6,title_1,trustworthiness,3
+Pesandu Withana,6,title_2,curiosity,2
+Pesandu Withana,6,title_2,emotional_impact,4
+Pesandu Withana,6,title_2,clarity,3
+Pesandu Withana,6,title_2,trustworthiness,3
+Pesandu Withana,6,title_3,curiosity,2
+Pesandu Withana,6,title_3,emotional_impact,3
+Pesandu Withana,6,title_3,clarity,2
+Pesandu Withana,6,title_3,trustworthiness,2
+Senuri Mihara,1,title_1,curiosity,4
+Senuri Mihara,1,title_1,emotional_impact,3
+Senuri Mihara,1,title_1,clarity,4
+Senuri Mihara,1,title_1,trustworthiness,4
+Senuri Mihara,1,title_2,curiosity,3
+Senuri Mihara,1,title_2,emotional_impact,4
+Senuri Mihara,1,title_2,clarity,4
+Senuri Mihara,1,title_2,trustworthiness,4
+Senuri Mihara,1,title_3,curiosity,3
+Senuri Mihara,1,title_3,emotional_impact,4
+Senuri Mihara,1,title_3,clarity,4
+Senuri Mihara,1,title_3,trustworthiness,4
+Senuri Mihara,3,title_1,curiosity,4
+Senuri Mihara,3,title_1,emotional_impact,3
+Senuri Mihara,3,title_1,clarity,3
+Senuri Mihara,3,title_1,trustworthiness,4
+Senuri Mihara,3,title_2,curiosity,4
+Senuri Mihara,3,title_2,emotional_impact,4
+Senuri Mihara,3,title_2,clarity,4
+Senuri Mihara,3,title_2,trustworthiness,4
+Senuri Mihara,3,title_3,curiosity,3
+Senuri Mihara,3,title_3,emotional_impact,4
+Senuri Mihara,3,title_3,clarity,4
+Senuri Mihara,3,title_3,trustworthiness,4
+Senuri Mihara,6,title_1,curiosity,2
+Senuri Mihara,6,title_1,emotional_impact,3
+Senuri Mihara,6,title_1,clarity,4
+Senuri Mihara,6,title_1,trustworthiness,4
+Senuri Mihara,6,title_2,curiosity,3
+Senuri Mihara,6,title_2,emotional_impact,3
+Senuri Mihara,6,title_2,clarity,3
+Senuri Mihara,6,title_2,trustworthiness,4
+Senuri Mihara,6,title_3,curiosity,3
+Senuri Mihara,6,title_3,emotional_impact,2
+Senuri Mihara,6,title_3,clarity,4
+Senuri Mihara,6,title_3,trustworthiness,4
+Gaweshika Madhushani,1,title_1,curiosity,3
+Gaweshika Madhushani,1,title_1,emotional_impact,2
+Gaweshika Madhushani,1,title_1,clarity,1
+Gaweshika Madhushani,1,title_1,trustworthiness,2
+Gaweshika Madhushani,1,title_2,curiosity,2
+Gaweshika Madhushani,1,title_2,emotional_impact,2
+Gaweshika Madhushani,1,title_2,clarity,2
+Gaweshika Madhushani,1,title_2,trustworthiness,2
+Gaweshika Madhushani,1,title_3,curiosity,4
+Gaweshika Madhushani,1,title_3,emotional_impact,5
+Gaweshika Madhushani,1,title_3,clarity,5
+Gaweshika Madhushani,1,title_3,trustworthiness,2
+Gaweshika Madhushani,3,title_1,curiosity,3
+Gaweshika Madhushani,3,title_1,emotional_impact,2
+Gaweshika Madhushani,3,title_1,clarity,4
+Gaweshika Madhushani,3,title_1,trustworthiness,5
+Gaweshika Madhushani,3,title_2,curiosity,4
+Gaweshika Madhushani,3,title_2,emotional_impact,3
+Gaweshika Madhushani,3,title_2,clarity,2
+Gaweshika Madhushani,3,title_2,trustworthiness,1
+Gaweshika Madhushani,3,title_3,curiosity,2
+Gaweshika Madhushani,3,title_3,emotional_impact,5
+Gaweshika Madhushani,3,title_3,clarity,5
+Gaweshika Madhushani,3,title_3,trustworthiness,4
+Gaweshika Madhushani,6,title_1,curiosity,2
+Gaweshika Madhushani,6,title_1,emotional_impact,1
+Gaweshika Madhushani,6,title_1,clarity,3
+Gaweshika Madhushani,6,title_1,trustworthiness,5
+Gaweshika Madhushani,6,title_2,curiosity,2
+Gaweshika Madhushani,6,title_2,emotional_impact,1
+Gaweshika Madhushani,6,title_2,clarity,2
+Gaweshika Madhushani,6,title_2,trustworthiness,3
+Gaweshika Madhushani,6,title_3,curiosity,1
+Gaweshika Madhushani,6,title_3,emotional_impact,1
+Gaweshika Madhushani,6,title_3,clarity,2
+Gaweshika Madhushani,6,title_3,trustworthiness,5
+Tharanga Dilshan,1,title_1,curiosity,5
+Tharanga Dilshan,1,title_1,emotional_impact,5
+Tharanga Dilshan,1,title_1,clarity,5
+Tharanga Dilshan,1,title_1,trustworthiness,5
+Tharanga Dilshan,1,title_2,curiosity,5
+Tharanga Dilshan,1,title_2,emotional_impact,5
+Tharanga Dilshan,1,title_2,clarity,5
+Tharanga Dilshan,1,title_2,trustworthiness,5
+Tharanga Dilshan,1,title_3,curiosity,5
+Tharanga Dilshan,1,title_3,emotional_impact,5
+Tharanga Dilshan,1,title_3,clarity,5
+Tharanga Dilshan,1,title_3,trustworthiness,5
+Tharanga Dilshan,3,title_1,curiosity,5
+Tharanga Dilshan,3,title_1,emotional_impact,5
+Tharanga Dilshan,3,title_1,clarity,5
+Tharanga Dilshan,3,title_1,trustworthiness,5
+Tharanga Dilshan,3,title_2,curiosity,5
+Tharanga Dilshan,3,title_2,emotional_impact,5
+Tharanga Dilshan,3,title_2,clarity,5
+Tharanga Dilshan,3,title_2,trustworthiness,5
+Tharanga Dilshan,3,title_3,curiosity,5
+Tharanga Dilshan,3,title_3,emotional_impact,5
+Tharanga Dilshan,3,title_3,clarity,5
+Tharanga Dilshan,3,title_3,trustworthiness,5
+Tharanga Dilshan,6,title_1,curiosity,5
+Tharanga Dilshan,6,title_1,emotional_impact,5
+Tharanga Dilshan,6,title_1,clarity,5
+Tharanga Dilshan,6,title_1,trustworthiness,5
+Tharanga Dilshan,6,title_2,curiosity,5
+Tharanga Dilshan,6,title_2,emotional_impact,5
+Tharanga Dilshan,6,title_2,clarity,5
+Tharanga Dilshan,6,title_2,trustworthiness,5
+Tharanga Dilshan,6,title_3,curiosity,5
+Tharanga Dilshan,6,title_3,emotional_impact,5
+Tharanga Dilshan,6,title_3,clarity,5
+Tharanga Dilshan,6,title_3,trustworthiness,5
+Viranga,1,title_1,curiosity,5
+Viranga,1,title_1,emotional_impact,5
+Viranga,1,title_1,clarity,5
+Viranga,1,title_1,trustworthiness,5
+Viranga,1,title_2,curiosity,5
+Viranga,1,title_2,emotional_impact,5
+Viranga,1,title_2,clarity,5
+Viranga,1,title_2,trustworthiness,5
+Viranga,1,title_3,curiosity,5
+Viranga,1,title_3,emotional_impact,1
+Viranga,1,title_3,clarity,5
+Viranga,1,title_3,trustworthiness,5
+Viranga,3,title_1,curiosity,5
+Viranga,3,title_1,emotional_impact,5
+Viranga,3,title_1,clarity,5
+Viranga,3,title_1,trustworthiness,5
+Viranga,3,title_2,curiosity,5
+Viranga,3,title_2,emotional_impact,5
+Viranga,3,title_2,clarity,4
+Viranga,3,title_2,trustworthiness,5
+Viranga,3,title_3,curiosity,5
+Viranga,3,title_3,emotional_impact,5
+Viranga,3,title_3,clarity,5
+Viranga,3,title_3,trustworthiness,5
+Viranga,6,title_1,curiosity,5
+Viranga,6,title_1,emotional_impact,5
+Viranga,6,title_1,clarity,5
+Viranga,6,title_1,trustworthiness,5
+Viranga,6,title_2,curiosity,5
+Viranga,6,title_2,emotional_impact,5
+Viranga,6,title_2,clarity,5
+Viranga,6,title_2,trustworthiness,5
+Viranga,6,title_3,curiosity,5
+Viranga,6,title_3,emotional_impact,5
+Viranga,6,title_3,clarity,5
+Viranga,6,title_3,trustworthiness,5
+Dinuka Abhilash,1,title_1,curiosity,5
+Dinuka Abhilash,1,title_1,emotional_impact,3
+Dinuka Abhilash,1,title_1,clarity,4
+Dinuka Abhilash,1,title_1,trustworthiness,5
+Dinuka Abhilash,1,title_2,curiosity,5
+Dinuka Abhilash,1,title_2,emotional_impact,4
+Dinuka Abhilash,1,title_2,clarity,5
+Dinuka Abhilash,1,title_2,trustworthiness,5
+Dinuka Abhilash,1,title_3,curiosity,5
+Dinuka Abhilash,1,title_3,emotional_impact,5
+Dinuka Abhilash,1,title_3,clarity,5
+Dinuka Abhilash,1,title_3,trustworthiness,5
+Dinuka Abhilash,3,title_1,curiosity,4
+Dinuka Abhilash,3,title_1,emotional_impact,3
+Dinuka Abhilash,3,title_1,clarity,5
+Dinuka Abhilash,3,title_1,trustworthiness,4
+Dinuka Abhilash,3,title_2,curiosity,5
+Dinuka Abhilash,3,title_2,emotional_impact,5
+Dinuka Abhilash,3,title_2,clarity,5
+Dinuka Abhilash,3,title_2,trustworthiness,5
+Dinuka Abhilash,3,title_3,curiosity,3
+Dinuka Abhilash,3,title_3,emotional_impact,3
+Dinuka Abhilash,3,title_3,clarity,4
+Dinuka Abhilash,3,title_3,trustworthiness,4
+Dinuka Abhilash,6,title_1,curiosity,3
+Dinuka Abhilash,6,title_1,emotional_impact,4
+Dinuka Abhilash,6,title_1,clarity,5
+Dinuka Abhilash,6,title_1,trustworthiness,4
+Dinuka Abhilash,6,title_2,curiosity,5
+Dinuka Abhilash,6,title_2,emotional_impact,4
+Dinuka Abhilash,6,title_2,clarity,5
+Dinuka Abhilash,6,title_2,trustworthiness,5
+Dinuka Abhilash,6,title_3,curiosity,5
+Dinuka Abhilash,6,title_3,emotional_impact,4
+Dinuka Abhilash,6,title_3,clarity,4
+Dinuka Abhilash,6,title_3,trustworthiness,5
+Hunter XD,1,title_1,curiosity,4
+Hunter XD,1,title_1,emotional_impact,4
+Hunter XD,1,title_1,clarity,5
+Hunter XD,1,title_1,trustworthiness,3
+Hunter XD,1,title_2,curiosity,4
+Hunter XD,1,title_2,emotional_impact,4
+Hunter XD,1,title_2,clarity,5
+Hunter XD,1,title_2,trustworthiness,2
+Hunter XD,1,title_3,curiosity,5
+Hunter XD,1,title_3,emotional_impact,4
+Hunter XD,1,title_3,clarity,4
+Hunter XD,1,title_3,trustworthiness,5
+Hunter XD,3,title_1,curiosity,3
+Hunter XD,3,title_1,emotional_impact,2
+Hunter XD,3,title_1,clarity,4
+Hunter XD,3,title_1,trustworthiness,3
+Hunter XD,3,title_2,curiosity,4
+Hunter XD,3,title_2,emotional_impact,4
+Hunter XD,3,title_2,clarity,4
+Hunter XD,3,title_2,trustworthiness,4
+Hunter XD,3,title_3,curiosity,4
+Hunter XD,3,title_3,emotional_impact,4
+Hunter XD,3,title_3,clarity,3
+Hunter XD,3,title_3,trustworthiness,4
+Hunter XD,6,title_1,curiosity,5
+Hunter XD,6,title_1,emotional_impact,4
+Hunter XD,6,title_1,clarity,5
+Hunter XD,6,title_1,trustworthiness,5
+Hunter XD,6,title_2,curiosity,5
+Hunter XD,6,title_2,emotional_impact,4
+Hunter XD,6,title_2,clarity,5
+Hunter XD,6,title_2,trustworthiness,5
+Hunter XD,6,title_3,curiosity,3
+Hunter XD,6,title_3,emotional_impact,3
+Hunter XD,6,title_3,clarity,3
+Hunter XD,6,title_3,trustworthiness,1
+kosala bandara,1,title_1,curiosity,5
+kosala bandara,1,title_1,emotional_impact,4
+kosala bandara,1,title_1,clarity,5
+kosala bandara,1,title_1,trustworthiness,4
+kosala bandara,1,title_2,curiosity,5
+kosala bandara,1,title_2,emotional_impact,5
+kosala bandara,1,title_2,clarity,5
+kosala bandara,1,title_2,trustworthiness,5
+kosala bandara,1,title_3,curiosity,5
+kosala bandara,1,title_3,emotional_impact,5
+kosala bandara,1,title_3,clarity,5
+kosala bandara,1,title_3,trustworthiness,5
+kosala bandara,3,title_1,curiosity,5
+kosala bandara,3,title_1,emotional_impact,4
+kosala bandara,3,title_1,clarity,3
+kosala bandara,3,title_1,trustworthiness,4
+kosala bandara,3,title_2,curiosity,4
+kosala bandara,3,title_2,emotional_impact,5
+kosala bandara,3,title_2,clarity,3
+kosala bandara,3,title_2,trustworthiness,4
+kosala bandara,3,title_3,curiosity,4
+kosala bandara,3,title_3,emotional_impact,5
+kosala bandara,3,title_3,clarity,5
+kosala bandara,3,title_3,trustworthiness,5
+kosala bandara,6,title_1,curiosity,4
+kosala bandara,6,title_1,emotional_impact,5
+kosala bandara,6,title_1,clarity,3
+kosala bandara,6,title_1,trustworthiness,5
+kosala bandara,6,title_2,curiosity,5
+kosala bandara,6,title_2,emotional_impact,5
+kosala bandara,6,title_2,clarity,4
+kosala bandara,6,title_2,trustworthiness,5
+kosala bandara,6,title_3,emotional_impact,5
+kosala bandara,6,title_3,clarity,5
+kosala bandara,6,title_3,trustworthiness,4
+Sithuuuu,1,title_1,curiosity,2
+Sithuuuu,1,title_1,emotional_impact,1
+Sithuuuu,1,title_1,clarity,3
+Sithuuuu,1,title_1,trustworthiness,2
+Sithuuuu,1,title_2,curiosity,4
+Sithuuuu,1,title_2,emotional_impact,2
+Sithuuuu,1,title_2,clarity,3
+Sithuuuu,1,title_2,trustworthiness,2
+Sithuuuu,1,title_3,curiosity,4
+Sithuuuu,1,title_3,emotional_impact,3
+Sithuuuu,1,title_3,clarity,3
+Sithuuuu,1,title_3,trustworthiness,2
+Sithuuuu,3,title_1,curiosity,2
+Sithuuuu,3,title_1,emotional_impact,2
+Sithuuuu,3,title_1,clarity,1
+Sithuuuu,3,title_1,trustworthiness,3
+Sithuuuu,3,title_2,curiosity,4
+Sithuuuu,3,title_2,emotional_impact,3
+Sithuuuu,3,title_2,clarity,2
+Sithuuuu,3,title_2,trustworthiness,3
+Sithuuuu,3,title_3,curiosity,3
+Sithuuuu,3,title_3,emotional_impact,2
+Sithuuuu,3,title_3,clarity,2
+Sithuuuu,3,title_3,trustworthiness,3
+Sithuuuu,6,title_1,curiosity,5
+Sithuuuu,6,title_1,emotional_impact,4
+Sithuuuu,6,title_1,clarity,5
+Sithuuuu,6,title_1,trustworthiness,3
+Sithuuuu,6,title_2,curiosity,5
+Sithuuuu,6,title_2,emotional_impact,3
+Sithuuuu,6,title_2,clarity,5
+Sithuuuu,6,title_2,trustworthiness,4
+Sithuuuu,6,title_3,curiosity,5
+Sithuuuu,6,title_3,emotional_impact,5
+Sithuuuu,6,title_3,clarity,5
+Sithuuuu,6,title_3,trustworthiness,4
+Akashi,1,title_1,curiosity,1
+Akashi,1,title_1,emotional_impact,3
+Akashi,1,title_1,clarity,1
+Akashi,1,title_1,trustworthiness,3
+Akashi,1,title_2,curiosity,3
+Akashi,1,title_2,emotional_impact,2
+Akashi,1,title_2,clarity,5
+Akashi,1,title_2,trustworthiness,2
+Akashi,1,title_3,curiosity,3
+Akashi,1,title_3,emotional_impact,5
+Akashi,1,title_3,clarity,3
+Akashi,1,title_3,trustworthiness,4
+Akashi,3,title_1,curiosity,2
+Akashi,3,title_1,emotional_impact,3
+Akashi,3,title_1,clarity,4
+Akashi,3,title_1,trustworthiness,5
+Akashi,3,title_2,curiosity,3
+Akashi,3,title_2,emotional_impact,4
+Akashi,3,title_2,clarity,5
+Akashi,3,title_2,trustworthiness,1
+Akashi,3,title_3,curiosity,3
+Akashi,3,title_3,emotional_impact,3
+Akashi,3,title_3,clarity,4
+Akashi,3,title_3,trustworthiness,1
+Akashi,6,title_1,curiosity,2
+Akashi,6,title_1,emotional_impact,3
+Akashi,6,title_1,clarity,4
+Akashi,6,title_1,trustworthiness,4
+Akashi,6,title_2,curiosity,3
+Akashi,6,title_2,emotional_impact,2
+Akashi,6,title_2,clarity,5
+Akashi,6,title_2,trustworthiness,5
+Akashi,6,title_3,curiosity,4
+Akashi,6,title_3,emotional_impact,5
+Akashi,6,title_3,clarity,3
+Akashi,6,title_3,trustworthiness,5
+Chanul,1,title_1,curiosity,3
+Chanul,1,title_1,emotional_impact,2
+Chanul,1,title_1,clarity,2
+Chanul,1,title_1,trustworthiness,1
+Chanul,1,title_2,curiosity,1
+Chanul,1,title_2,emotional_impact,3
+Chanul,1,title_2,clarity,2
+Chanul,1,title_2,trustworthiness,1
+Chanul,1,title_3,curiosity,1
+Chanul,1,title_3,emotional_impact,3
+Chanul,1,title_3,clarity,1
+Chanul,1,title_3,trustworthiness,1
+Chanul,3,title_1,curiosity,2
+Chanul,3,title_1,emotional_impact,1
+Chanul,3,title_1,clarity,3
+Chanul,3,title_1,trustworthiness,2
+Chanul,3,title_2,curiosity,4
+Chanul,3,title_2,emotional_impact,1
+Chanul,3,title_2,clarity,1
+Chanul,3,title_2,trustworthiness,1
+Chanul,3,title_3,curiosity,3
+Chanul,3,title_3,emotional_impact,3
+Chanul,3,title_3,clarity,1
+Chanul,3,title_3,trustworthiness,2
+Chanul,6,title_1,curiosity,1
+Chanul,6,title_1,emotional_impact,3
+Chanul,6,title_1,clarity,3
+Chanul,6,title_1,trustworthiness,2
+Chanul,6,title_2,curiosity,3
+Chanul,6,title_2,emotional_impact,4
+Chanul,6,title_2,trustworthiness,1
+Chanul,6,title_3,curiosity,1
+Chanul,6,title_3,emotional_impact,1
+Chanul,6,title_3,clarity,2
+Chanul,6,title_3,trustworthiness,3
+Arunadee,1,title_1,curiosity,2
+Arunadee,1,title_1,emotional_impact,3
+Arunadee,1,title_1,clarity,1
+Arunadee,1,title_1,trustworthiness,4
+Arunadee,1,title_2,curiosity,4
+Arunadee,1,title_2,emotional_impact,3
+Arunadee,1,title_2,clarity,1
+Arunadee,1,title_2,trustworthiness,3
+Arunadee,1,title_3,curiosity,3
+Arunadee,1,title_3,emotional_impact,2
+Arunadee,1,title_3,clarity,3
+Arunadee,1,title_3,trustworthiness,5
+Arunadee,3,title_1,curiosity,2
+Arunadee,3,title_1,emotional_impact,4
+Arunadee,3,title_1,clarity,3
+Arunadee,3,title_1,trustworthiness,3
+Arunadee,3,title_2,curiosity,3
+Arunadee,3,title_2,emotional_impact,3
+Arunadee,3,title_2,clarity,4
+Arunadee,3,title_2,trustworthiness,5
+Arunadee,3,title_3,curiosity,2
+Arunadee,3,title_3,emotional_impact,3
+Arunadee,3,title_3,clarity,4
+Arunadee,3,title_3,trustworthiness,4
+Arunadee,6,title_1,curiosity,3
+Arunadee,6,title_1,emotional_impact,5
+Arunadee,6,title_1,clarity,3
+Arunadee,6,title_1,trustworthiness,5
+Arunadee,6,title_2,curiosity,3
+Arunadee,6,title_2,emotional_impact,4
+Arunadee,6,title_2,clarity,2
+Arunadee,6,title_2,trustworthiness,4
+Arunadee,6,title_3,curiosity,2
+Arunadee,6,title_3,emotional_impact,3
+Arunadee,6,title_3,clarity,4
+Arunadee,6,title_3,trustworthiness,5
+....,1,title_1,curiosity,4
+....,1,title_1,emotional_impact,4
+....,1,title_1,clarity,3
+....,1,title_1,trustworthiness,2
+....,1,title_2,curiosity,4
+....,1,title_2,emotional_impact,3
+....,1,title_2,clarity,2
+....,1,title_2,trustworthiness,1
+....,1,title_3,curiosity,5
+....,1,title_3,emotional_impact,3
+....,1,title_3,clarity,4
+....,1,title_3,trustworthiness,1
+....,3,title_1,curiosity,4
+....,3,title_1,emotional_impact,3
+....,3,title_1,clarity,5
+....,3,title_1,trustworthiness,3
+....,3,title_2,curiosity,4
+....,3,title_2,emotional_impact,3
+....,3,title_2,clarity,5
+....,3,title_2,trustworthiness,3
+....,3,title_3,curiosity,3
+....,3,title_3,emotional_impact,3
+....,3,title_3,clarity,4
+....,3,title_3,trustworthiness,3
+....,6,title_1,curiosity,4
+....,6,title_1,emotional_impact,5
+....,6,title_1,clarity,2
+....,6,title_1,trustworthiness,2
+....,6,title_2,curiosity,3
+....,6,title_2,emotional_impact,3
+....,6,title_2,clarity,4
+....,6,title_2,trustworthiness,5
+....,6,title_3,curiosity,4
+....,6,title_3,emotional_impact,3
+....,6,title_3,clarity,3
+....,6,title_3,trustworthiness,4
+Deneth,1,title_1,curiosity,1
+Deneth,1,title_1,emotional_impact,1
+Deneth,1,title_1,clarity,2
+Deneth,1,title_1,trustworthiness,2
+Deneth,1,title_2,curiosity,2
+Deneth,1,title_2,emotional_impact,3
+Deneth,1,title_2,clarity,3
+Deneth,1,title_2,trustworthiness,2
+Deneth,1,title_3,curiosity,1
+Deneth,1,title_3,emotional_impact,5
+Deneth,1,title_3,clarity,4
+Deneth,1,title_3,trustworthiness,3
+Deneth,3,title_1,curiosity,3
+Deneth,3,title_1,emotional_impact,4
+Deneth,3,title_1,clarity,3
+Deneth,3,title_1,trustworthiness,3
+Deneth,3,title_2,curiosity,3
+Deneth,3,title_2,emotional_impact,2
+Deneth,3,title_2,clarity,4
+Deneth,3,title_2,trustworthiness,4
+Deneth,3,title_3,curiosity,4
+Deneth,3,title_3,emotional_impact,2
+Deneth,3,title_3,clarity,3
+Deneth,3,title_3,trustworthiness,3
+Deneth,6,title_1,curiosity,2
+Deneth,6,title_1,emotional_impact,2
+Deneth,6,title_1,clarity,4
+Deneth,6,title_1,trustworthiness,2
+Deneth,6,title_2,curiosity,2
+Deneth,6,title_2,emotional_impact,2
+Deneth,6,title_2,clarity,4
+Deneth,6,title_2,trustworthiness,2
+Deneth,6,title_3,curiosity,4
+Deneth,6,title_3,emotional_impact,3
+Deneth,6,title_3,clarity,4
+Deneth,6,title_3,trustworthiness,3
+Randi,1,title_1,curiosity,4
+Randi,1,title_1,emotional_impact,4
+Randi,1,title_1,clarity,5
+Randi,1,title_1,trustworthiness,5
+Randi,1,title_2,curiosity,5
+Randi,1,title_2,emotional_impact,4
+Randi,1,title_2,clarity,4
+Randi,1,title_2,trustworthiness,4
+Randi,1,title_3,curiosity,4
+Randi,1,title_3,emotional_impact,4
+Randi,1,title_3,clarity,4
+Randi,1,title_3,trustworthiness,4
+Randi,3,title_1,curiosity,2
+Randi,3,title_1,emotional_impact,2
+Randi,3,title_1,clarity,4
+Randi,3,title_1,trustworthiness,2
+Randi,3,title_2,curiosity,2
+Randi,3,title_2,emotional_impact,3
+Randi,3,title_2,clarity,5
+Randi,3,title_2,trustworthiness,4
+Randi,3,title_3,curiosity,2
+Randi,3,title_3,emotional_impact,4
+Randi,3,title_3,clarity,4
+Randi,3,title_3,trustworthiness,3
+Randi,6,title_1,curiosity,1
+Randi,6,title_1,emotional_impact,2
+Randi,6,title_1,clarity,5
+Randi,6,title_1,trustworthiness,4
+Randi,6,title_2,curiosity,1
+Randi,6,title_2,emotional_impact,3
+Randi,6,title_2,clarity,4
+Randi,6,title_2,trustworthiness,3
+Randi,6,title_3,curiosity,1
+Randi,6,title_3,emotional_impact,3
+Randi,6,title_3,clarity,5
+Randi,6,title_3,trustworthiness,3
+Deshan,1,title_1,curiosity,2
+Deshan,1,title_1,emotional_impact,4
+Deshan,1,title_1,clarity,4
+Deshan,1,title_1,trustworthiness,2
+Deshan,1,title_2,curiosity,3
+Deshan,1,title_2,emotional_impact,3
+Deshan,1,title_2,clarity,3
+Deshan,1,title_2,trustworthiness,3
+Deshan,1,title_3,curiosity,3
+Deshan,1,title_3,emotional_impact,3
+Deshan,1,title_3,clarity,3
+Deshan,1,title_3,trustworthiness,3
+Deshan,3,title_1,curiosity,3
+Deshan,3,title_1,emotional_impact,3
+Deshan,3,title_1,clarity,3
+Deshan,3,title_1,trustworthiness,3
+Deshan,3,title_2,curiosity,3
+Deshan,3,title_2,emotional_impact,3
+Deshan,3,title_2,clarity,3
+Deshan,3,title_2,trustworthiness,3
+Deshan,3,title_3,curiosity,3
+Deshan,3,title_3,emotional_impact,3
+Deshan,3,title_3,clarity,3
+Deshan,3,title_3,trustworthiness,3
+Deshan,6,title_1,curiosity,3
+Deshan,6,title_1,emotional_impact,3
+Deshan,6,title_1,clarity,3
+Deshan,6,title_1,trustworthiness,3
+Deshan,6,title_2,curiosity,3
+Deshan,6,title_2,emotional_impact,3
+Deshan,6,title_2,clarity,3
+Deshan,6,title_2,trustworthiness,3
+Deshan,6,title_3,curiosity,3
+Deshan,6,title_3,emotional_impact,3
+Deshan,6,title_3,clarity,3
+Deshan,6,title_3,trustworthiness,3
+Pathum lahiru,1,title_1,curiosity,3
+Pathum lahiru,1,title_1,emotional_impact,3
+Pathum lahiru,1,title_1,clarity,3
+Pathum lahiru,1,title_1,trustworthiness,2
+Pathum lahiru,1,title_2,curiosity,4
+Pathum lahiru,1,title_2,emotional_impact,4
+Pathum lahiru,1,title_2,clarity,5
+Pathum lahiru,1,title_2,trustworthiness,4
+Pathum lahiru,1,title_3,curiosity,4
+Pathum lahiru,1,title_3,emotional_impact,3
+Pathum lahiru,1,title_3,clarity,4
+Pathum lahiru,1,title_3,trustworthiness,4
+Pathum lahiru,3,title_1,curiosity,3
+Pathum lahiru,3,title_1,emotional_impact,3
+Pathum lahiru,3,title_1,clarity,3
+Pathum lahiru,3,title_1,trustworthiness,3
+Pathum lahiru,3,title_2,curiosity,4
+Pathum lahiru,3,title_2,emotional_impact,4
+Pathum lahiru,3,title_2,clarity,4
+Pathum lahiru,3,title_2,trustworthiness,3
+Pathum lahiru,3,title_3,curiosity,5
+Pathum lahiru,3,title_3,emotional_impact,5
+Pathum lahiru,3,title_3,clarity,4
+Pathum lahiru,3,title_3,trustworthiness,4
+Pathum lahiru,6,title_1,curiosity,4
+Pathum lahiru,6,title_1,emotional_impact,5
+Pathum lahiru,6,title_1,clarity,4
+Pathum lahiru,6,title_1,trustworthiness,4
+Pathum lahiru,6,title_2,curiosity,4
+Pathum lahiru,6,title_2,emotional_impact,4
+Pathum lahiru,6,title_2,clarity,4
+Pathum lahiru,6,title_2,trustworthiness,4
+Pathum lahiru,6,title_3,curiosity,3
+Pathum lahiru,6,title_3,emotional_impact,4
+Pathum lahiru,6,title_3,clarity,4
+Pathum lahiru,6,title_3,trustworthiness,3
+Jaye,1,title_1,curiosity,2
+Jaye,1,title_1,emotional_impact,3
+Jaye,1,title_1,clarity,2
+Jaye,1,title_1,trustworthiness,3
+Jaye,1,title_2,curiosity,3
+Jaye,1,title_2,emotional_impact,3
+Jaye,1,title_2,clarity,3
+Jaye,1,title_2,trustworthiness,4
+Jaye,1,title_3,curiosity,3
+Jaye,1,title_3,emotional_impact,3
+Jaye,1,title_3,clarity,1
+Jaye,1,title_3,trustworthiness,3
+Jaye,3,title_1,curiosity,2
+Jaye,3,title_1,emotional_impact,3
+Jaye,3,title_1,clarity,3
+Jaye,3,title_1,trustworthiness,3
+Jaye,3,title_2,curiosity,3
+Jaye,3,title_2,emotional_impact,3
+Jaye,3,title_2,clarity,3
+Jaye,3,title_2,trustworthiness,3
+Jaye,3,title_3,curiosity,2
+Jaye,3,title_3,emotional_impact,3
+Jaye,3,title_3,clarity,2
+Jaye,3,title_3,trustworthiness,2
+Jaye,6,title_1,curiosity,3
+Jaye,6,title_1,emotional_impact,3
+Jaye,6,title_1,clarity,3
+Jaye,6,title_1,trustworthiness,3
+Jaye,6,title_2,curiosity,3
+Jaye,6,title_2,emotional_impact,3
+Jaye,6,title_2,clarity,3
+Jaye,6,title_2,trustworthiness,2
+Jaye,6,title_3,curiosity,2
+Jaye,6,title_3,emotional_impact,3
+Jaye,6,title_3,clarity,3
+Jaye,6,title_3,trustworthiness,3

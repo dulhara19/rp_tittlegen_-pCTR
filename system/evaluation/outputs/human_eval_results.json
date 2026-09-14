@@ -1,0 +1,74 @@
+{
+  "n_responses": 1041,
+  "mean_scores_by_condition": {
+    "baseline_a": {
+      "curiosity": 3.471264367816092,
+      "emotional_impact": 3.5348837209302326,
+      "clarity": 3.7126436781609193,
+      "trustworthiness": 3.5057471264367814
+    },
+    "baseline_b": {
+      "curiosity": 3.3908045977011496,
+      "emotional_impact": 3.367816091954023,
+      "clarity": 3.6511627906976742,
+      "trustworthiness": 3.425287356321839
+    },
+    "system": {
+      "curiosity": 3.5232558139534884,
+      "emotional_impact": 3.586206896551724,
+      "clarity": 3.5517241379310347,
+      "trustworthiness": 3.5057471264367814
+    }
+  },
+  "significance": {
+    "system_vs_baseline_a": {
+      "curiosity": {
+        "n_pairs": 86,
+        "statistic": 388.5,
+        "p_value": 0.5685935482771816
+      },
+      "emotional_impact": {
+        "n_pairs": 86,
+        "statistic": 439.5,
+        "p_value": 0.6772039687629614
+      },
+      "clarity": {
+        "n_pairs": 87,
+        "statistic": 353.0,
+        "p_value": 0.20505493320142298
+      },
+      "trustworthiness": {
+        "n_pairs": 87,
+        "statistic": 490.0,
+        "p_value": 0.9508855492784157
+      }
+    },
+    "system_vs_baseline_b": {
+      "curiosity": {
+        "n_pairs": 86,
+        "statistic": 511.0,
+        "p_value": 0.2875231241274626
+      },
+      "emotional_impact": {
+        "n_pairs": 87,
+        "statistic": 380.5,
+        "p_value": 0.11036941618144762
+      },
+      "clarity": {
+        "n_pairs": 86,
+        "statistic": 446.0,
+        "p_value": 0.39330655685101334
+      },
+      "trustworthiness": {
+        "n_pairs": 87,
+        "statistic": 385.0,
+        "p_value": 0.2649238218732275
+      }
+    }
+  },
+  "llm_judge_reliability_curiosity_pearson_r": {
+    "n_pairs": 9,
+    "pearson_r": -0.13952248723945387,
+    "p_value": 0.7203376811790907
+  }
+}

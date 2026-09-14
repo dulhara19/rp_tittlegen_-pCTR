@@ -1,0 +1,514 @@
+{
+  "aggregate": {
+    "n_runs": 20,
+    "n_errors": 0,
+    "acceptance_rate": 0.94,
+    "avg_top_pctr": 0.6853153986838815,
+    "avg_vader_arousal": 0.26471,
+    "avg_bert_similarity": 0.8716803294420242,
+    "avg_self_bleu": 0.0536894027853439,
+    "latency_p50_seconds": 7.38205874999403,
+    "latency_p95_seconds": 9.952861135019342,
+    "targets_met": {
+      "acceptance_rate": true,
+      "avg_top_pctr": true,
+      "avg_vader_arousal": false,
+      "avg_bert_similarity": false,
+      "avg_self_bleu": true,
+      "latency_p95_seconds": true
+    }
+  },
+  "per_run": [
+    {
+      "video_category": "Science & Technology",
+      "elapsed": 15.04855539998971,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.6474461853550822,
+      "vader_arousals": [
+        0.0,
+        0.0,
+        0.2263,
+        0.0,
+        0.0
+      ],
+      "bert_similarities": [
+        0.8747071623802185,
+        0.8946396112442017,
+        0.8773224949836731,
+        0.8843603134155273,
+        0.8694791793823242
+      ],
+      "self_bleu": 0.10955788397362554,
+      "top_title": "Why Upgrading to the Pixel 9 Pro Might Cost You",
+      "rejection_log": []
+    },
+    {
+      "video_category": "Howto & Style",
+      "elapsed": 7.236862400022801,
+      "n_candidates": 5,
+      "n_valid": 4,
+      "top_pctr": 0.6173048851899265,
+      "vader_arousals": [
+        0.0,
+        0.5719,
+        0.091,
+        0.0,
+        0.0
+      ],
+      "bert_similarities": [
+        0.9169651865959167,
+        0.9059344530105591,
+        0.8552568554878235,
+        0.8383684754371643,
+        0.8920478224754333
+      ],
+      "self_bleu": 0.1726520337711159,
+      "top_title": "Master the 72-Hour Cold Ferment for Perfect Pizza",
+      "rejection_log": [
+        "'Why a 65% Hydration Level Changes Your Pizza Game' rejected: NLI contradiction against core_promise ('The video teaches viewers how to make authentic Neapolitan pizza dough using a 72-hour cold ferment process.')"
+      ]
+    },
+    {
+      "video_category": "People & Blogs",
+      "elapsed": 6.951335499994457,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.8786617318218202,
+      "vader_arousals": [
+        0.5719,
+        0.0,
+        0.4215,
+        0.7003,
+        0.0
+      ],
+      "bert_similarities": [
+        0.8805133104324341,
+        0.8842266798019409,
+        0.8893308639526367,
+        0.887345016002655,
+        0.8801153302192688
+      ],
+      "self_bleu": 0.04764014006402162,
+      "top_title": "The Surprising Success of My Woodworking Journey",
+      "rejection_log": []
+    },
+    {
+      "video_category": "Travel & Events",
+      "elapsed": 6.977911499969196,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.5753840823834379,
+      "vader_arousals": [
+        0.0,
+        0.0,
+        0.2023,
+        0.1531,
+        0.6369
+      ],
+      "bert_similarities": [
+        0.9123799800872803,
+        0.8550167679786682,
+        0.9107719659805298,
+        0.8784143924713135,
+        0.8865364789962769
+      ],
+      "self_bleu": 0.05932401163249372,
+      "top_title": "Unlocking Southeast Asia's Best Kept Travel Secrets",
+      "rejection_log": []
+    },
+    {
+      "video_category": "News & Politics",
+      "elapsed": 7.934608899988234,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.6671471419972632,
+      "vader_arousals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5719
+      ],
+      "bert_similarities": [
+        0.8570688962936401,
+        0.8410561084747314,
+        0.8452802896499634,
+        0.8567613363265991,
+        0.8347041010856628
+      ],
+      "self_bleu": 0.02313723330423806,
+      "top_title": "Cloud Outage Chaos: How It Affects 95% of Internet Users",
+      "rejection_log": []
+    },
+    {
+      "video_category": "Education",
+      "elapsed": 5.5974295000196435,
+      "n_candidates": 5,
+      "n_valid": 4,
+      "top_pctr": 0.8396915578235923,
+      "vader_arousals": [
+        0.2732,
+        0.358,
+        0.3612,
+        0.3818,
+        0.0
+      ],
+      "bert_similarities": [
+        0.8881687521934509,
+        0.8697134852409363,
+        0.8656684756278992,
+        0.8498550653457642,
+        0.886253833770752
+      ],
+      "self_bleu": 0.031488148145175636,
+      "top_title": "Why Does Ice Float? The Surprising Science Behind It",
+      "rejection_log": [
+        "'What Happens to Icebergs If You Ignore This Science' rejected: NLI contradiction against core_promise ('The video explains why ice floats on water due to the unique arrangement of water molecules when frozen.')"
+      ]
+    },
+    {
+      "video_category": "Gaming",
+      "elapsed": 7.101521299977321,
+      "n_candidates": 5,
+      "n_valid": 3,
+      "top_pctr": 0.6291889790678175,
+      "vader_arousals": [
+        0.4442,
+        0.2714,
+        0.0,
+        0.5719,
+        0.5719
+      ],
+      "bert_similarities": [
+        0.8781670331954956,
+        0.8534021973609924,
+        0.8738098740577698,
+        0.8627071380615234,
+        0.8857512474060059
+      ],
+      "self_bleu": 0.030806744711363805,
+      "top_title": "Speedrun Mastery: Beat a Game Without Taking Damage!",
+      "rejection_log": [
+        "'Unbelievable! 340 Attempts to Conquer the Final Boss' rejected: NLI contradiction against core_promise ('The video delivers a detailed breakdown of a successful no-damage speedrun attempt of a game, including strategies and tricks used.')",
+        "'Avoid These Common Mistakes in No-Damage Speedruns' rejected: NLI contradiction against core_promise ('The video delivers a detailed breakdown of a successful no-damage speedrun attempt of a game, including strategies and tricks used.')"
+      ]
+    },
+    {
+      "video_category": "Howto & Style",
+      "elapsed": 6.6986855999566615,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.6922139298609887,
+      "vader_arousals": [
+        0.0,
+        0.8147,
+        0.296,
+        0.3612,
+        0.0
+      ],
+      "bert_similarities": [
+        0.8774242401123047,
+        0.8632679581642151,
+        0.8943096399307251,
+        0.8620810508728027,
+        0.900079071521759
+      ],
+      "self_bleu": 0.038515006732230204,
+      "top_title": "Why Most Workouts Fail: Avoid Missing These 5 Moves",
+      "rejection_log": []
+    },
+    {
+      "video_category": "Science & Technology",
+      "elapsed": 8.297141399991233,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.6670963910685058,
+      "vader_arousals": [
+        0.6369,
+        0.4404,
+        0.1945,
+        0.4201,
+        0.0
+      ],
+      "bert_similarities": [
+        0.8622199892997742,
+        0.9064180850982666,
+        0.8884367942810059,
+        0.8598054647445679,
+        0.86472088098526
+      ],
+      "self_bleu": 0.05287178618251807,
+      "top_title": "Which $300 Robot Vacuum Cleans Best? (Eufy vs Roborock vs Shark)",
+      "rejection_log": []
+    },
+    {
+      "video_category": "People & Blogs",
+      "elapsed": 8.55276380002033,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.6825098218526933,
+      "vader_arousals": [
+        0.5859,
+        0.6486,
+        0.4019,
+        0.4404,
+        0.128
+      ],
+      "bert_similarities": [
+        0.8693628311157227,
+        0.9228090047836304,
+        0.8698800802230835,
+        0.8713772892951965,
+        0.8741554617881775
+      ],
+      "self_bleu": 0.04518439542905919,
+      "top_title": "How I Crushed $42K Debt in 19 Months on a $55K Salary",
+      "rejection_log": []
+    },
+    {
+      "video_category": "Film & Animation",
+      "elapsed": 7.866291899990756,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.7547241487803316,
+      "vader_arousals": [
+        0.0,
+        0.3182,
+        0.5106,
+        0.4767,
+        0.3182
+      ],
+      "bert_similarities": [
+        0.859155535697937,
+        0.860732913017273,
+        0.8913871049880981,
+        0.8453744649887085,
+        0.8590188026428223
+      ],
+      "self_bleu": 0.04139471829711083,
+      "top_title": "What Could Go Wrong? Paper Plane Navigates a Storm Drain",
+      "rejection_log": []
+    },
+    {
+      "video_category": "Autos & Vehicles",
+      "elapsed": 8.09660150000127,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.7402454910783706,
+      "vader_arousals": [
+        0.0,
+        0.0772,
+        0.0,
+        0.4404,
+        0.6303
+      ],
+      "bert_similarities": [
+        0.8547033667564392,
+        0.8841283321380615,
+        0.8371732831001282,
+        0.867841362953186,
+        0.8504649996757507
+      ],
+      "self_bleu": 0.036600017162609716,
+      "top_title": "Don't Miss These Torque Specs: The Key to a Perfect Engine Rebuild",
+      "rejection_log": []
+    },
+    {
+      "video_category": "Music",
+      "elapsed": 7.692609400022775,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.5229095167923139,
+      "vader_arousals": [
+        0.0,
+        0.2732,
+        0.5562,
+        0.5267,
+        0.1027
+      ],
+      "bert_similarities": [
+        0.8746944069862366,
+        0.8673937916755676,
+        0.8673220872879028,
+        0.868789792060852,
+        0.883935809135437
+      ],
+      "self_bleu": 0.033000756936505615,
+      "top_title": "How I Crafted a Track Using Only Free Plugins in 14 Hours!",
+      "rejection_log": []
+    },
+    {
+      "video_category": "Pets & Animals",
+      "elapsed": 6.830294799990952,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.6654532235543592,
+      "vader_arousals": [
+        0.0,
+        0.0772,
+        0.4939,
+        0.1027,
+        0.5411
+      ],
+      "bert_similarities": [
+        0.893490731716156,
+        0.8688009977340698,
+        0.9041864275932312,
+        0.8849952220916748,
+        0.8843551874160767
+      ],
+      "self_bleu": 0.05077624115727275,
+      "top_title": "Witness Week-by-Week Progress as Biscuit Beats His Fear",
+      "rejection_log": []
+    },
+    {
+      "video_category": "Sports",
+      "elapsed": 6.756198699993547,
+      "n_candidates": 5,
+      "n_valid": 4,
+      "top_pctr": 0.5478879480991226,
+      "vader_arousals": [
+        0.2942,
+        0.0,
+        0.6486,
+        0.0,
+        0.0
+      ],
+      "bert_similarities": [
+        0.8737456798553467,
+        0.856170117855072,
+        0.8229557275772095,
+        0.8757181167602539,
+        0.8476182222366333
+      ],
+      "self_bleu": 0.021349356065719804,
+      "top_title": "How I Slashed Nearly an Hour off My Marathon Time!",
+      "rejection_log": [
+        "'What You Could Be Losing by Ignoring Hip Imbalances' rejected: NLI contradiction against core_promise ('The video explains how the speaker improved their marathon time from 4 hours 12 minutes to 3 hours 21 minutes over four years by making specific changes.')"
+      ]
+    },
+    {
+      "video_category": "Comedy",
+      "elapsed": 9.684666700020898,
+      "n_candidates": 5,
+      "n_valid": 4,
+      "top_pctr": 0.7394464856617987,
+      "vader_arousals": [
+        0.1007,
+        0.2023,
+        0.4574,
+        0.6588,
+        0.4003
+      ],
+      "bert_similarities": [
+        0.8483631014823914,
+        0.8501228094100952,
+        0.8537656664848328,
+        0.8463922739028931,
+        0.8345038890838623
+      ],
+      "self_bleu": 0.022908171245906096,
+      "top_title": "Why Failure Was Inevitable in This Mom's Text Comedy Set",
+      "rejection_log": [
+        "\"Open Mic Disaster: Mom's Texts Didn't Land!\" rejected: NLI contradiction against core_promise (\"The video delivers an 8-minute stand-up set composed entirely of unedited complaints texted by the creator's mom, including crowd reactions and analysis of two failed jokes.\")"
+      ]
+    },
+    {
+      "video_category": "Entertainment",
+      "elapsed": 6.906095699989237,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.7753926381731313,
+      "vader_arousals": [
+        0.0,
+        0.0,
+        0.0,
+        0.4404,
+        0.1027
+      ],
+      "bert_similarities": [
+        0.8688387870788574,
+        0.8480398058891296,
+        0.8574156165122986,
+        0.8840033411979675,
+        0.8756647706031799
+      ],
+      "self_bleu": 0.02997234061112773,
+      "top_title": "This Is How Viral Fame Can Triple a Street Performer\u2019s Income",
+      "rejection_log": []
+    },
+    {
+      "video_category": "Nonprofits & Activism",
+      "elapsed": 8.352910100016743,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.6330714973664339,
+      "vader_arousals": [
+        0.1531,
+        0.5859,
+        0.4574,
+        0.0,
+        0.4019
+      ],
+      "bert_similarities": [
+        0.8617459535598755,
+        0.8914990425109863,
+        0.8626797795295715,
+        0.8752231001853943,
+        0.8876733779907227
+      ],
+      "self_bleu": 0.0505025786521728,
+      "top_title": "Village Elder Leads a Well-Building Miracle in Malawi",
+      "rejection_log": []
+    },
+    {
+      "video_category": "Education",
+      "elapsed": 7.272727300005499,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.6555768049712688,
+      "vader_arousals": [
+        0.0,
+        0.5367,
+        0.4939,
+        0.6124,
+        0.0
+      ],
+      "bert_similarities": [
+        0.8957111835479736,
+        0.8704352974891663,
+        0.892742395401001,
+        0.8661213517189026,
+        0.8668303489685059
+      ],
+      "self_bleu": 0.04622104903537004,
+      "top_title": "The Most Famous Bridge Collapse Explained: Tacoma Narrows 1940",
+      "rejection_log": []
+    },
+    {
+      "video_category": "Gaming",
+      "elapsed": 7.491390199982561,
+      "n_candidates": 5,
+      "n_valid": 5,
+      "top_pctr": 0.7749555127793712,
+      "vader_arousals": [
+        0.0,
+        0.4019,
+        0.34,
+        0.4019,
+        0.5859
+      ],
+      "bert_similarities": [
+        0.8899499773979187,
+        0.8563273549079895,
+        0.862482488155365,
+        0.8545875549316406,
+        0.8743131756782532
+      ],
+      "self_bleu": 0.1298854425972408,
+      "top_title": "The Brutal Challenge of Doom's Hardest Mode with Retro Gear",
+      "rejection_log": []
+    }
+  ]
+}

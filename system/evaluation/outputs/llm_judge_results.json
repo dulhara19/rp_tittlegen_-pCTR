@@ -1,0 +1,705 @@
+{
+  "summary": {
+    "n_videos": 20,
+    "mean_scores_by_condition": {
+      "baseline_a": {
+        "curiosity": 3.25,
+        "urgency": 2.3,
+        "relevance": 4.5,
+        "overall": 3.3
+      },
+      "baseline_b": {
+        "curiosity": 3.9,
+        "urgency": 2.85,
+        "relevance": 4.95,
+        "overall": 3.85
+      },
+      "system": {
+        "curiosity": 4,
+        "urgency": 2.95,
+        "relevance": 4.55,
+        "overall": 3.95
+      }
+    },
+    "significance": {
+      "system_vs_baseline_a": {
+        "curiosity": {
+          "statistic": 0.0,
+          "p_value": 0.0006290199752643491
+        },
+        "urgency": {
+          "statistic": 7.0,
+          "p_value": 0.0016162222150599857
+        },
+        "relevance": {
+          "statistic": 20.0,
+          "p_value": 0.7388826803635273
+        },
+        "overall": {
+          "statistic": 0.0,
+          "p_value": 0.0007891129890156299
+        }
+      },
+      "system_vs_baseline_b": {
+        "curiosity": {
+          "statistic": 0.0,
+          "p_value": 0.15729920705028502
+        },
+        "urgency": {
+          "statistic": 2.5,
+          "p_value": 0.31731050786291415
+        },
+        "relevance": {
+          "statistic": 0.0,
+          "p_value": 0.0046777349810472576
+        },
+        "overall": {
+          "statistic": 0.0,
+          "p_value": 0.15729920705028502
+        }
+      }
+    }
+  },
+  "per_video": [
+    {
+      "video_category": "Science & Technology",
+      "core_promise": "The video delivers a three-week real-world review of the Pixel 9 Pro, highlighting its improved camera, battery life, and price compared to the Pixel 7.",
+      "titles": {
+        "baseline_a": "Three-week real-world review of the Pixel 9 Pro.",
+        "baseline_b": "Pixel 9 Pro Review: Worth the $999 Upgrade?",
+        "system": "Pixel 9 Pro vs Pixel 7: 3-Week Review Reveals $999's Real Value"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 2,
+          "urgency": 2,
+          "relevance": 5,
+          "overall": 3,
+          "reasoning": "The title is straightforward and accurately reflects the content of the video, which is a three-week review of the Pixel 9 Pro. However, it lacks elements that create curiosity or urgency. It doesn't hint at any surprising findings or critical insights that might entice viewers to click immediately. The relevance is high because it directly matches the video summary, but the curiosity and urgency are low because the title doesn't suggest any unique or time-sensitive information that would compel immediate viewing."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title \"Pixel 9 Pro Review: Worth the $999 Upgrade?\" effectively creates curiosity by posing a question about the value of the upgrade, which encourages viewers to watch the video to find out the answer. This taps into the information gap theory, as viewers will want to know if the new features justify the price. The urgency is moderate; while there is some pressure to decide on a purchase, it is not immediate unless the viewer is actively considering buying the phone. The relevance is high, as the title directly reflects the content of the video, which is a review of the Pixel 9 Pro focusing on its value proposition compared to previous models."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by suggesting a comparison between the Pixel 9 Pro and Pixel 7, and promising to reveal the 'real value' of the $999 price tag, which implies there might be surprising insights or conclusions. This creates an information gap that viewers would want to fill by watching the video. \n\nThe urgency is moderate; while the title suggests a timely review ('3-Week Review'), it doesn't convey a strong sense of immediate action or consequence if the viewer doesn't watch it right away. However, the mention of the price might create some urgency for potential buyers.\n\nRelevance is high as the title accurately reflects the content of the video, which is a three-week review comparing the Pixel 9 Pro to the Pixel 7, focusing on key aspects like camera, battery life, and price."
+        }
+      }
+    },
+    {
+      "video_category": "Howto & Style",
+      "core_promise": "The video teaches viewers how to make authentic Neapolitan pizza dough using a 72-hour cold ferment process.",
+      "titles": {
+        "baseline_a": "Step-by-step Neapolitan pizza dough tutorial.",
+        "baseline_b": "Mastering Authentic Neapolitan Pizza Dough: 4 Ingredients & 72-Hour Cold Ferment Technique",
+        "system": "Don't Ruin Your Pizza Dough: 72-Hour Fermentation Explained"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 4,
+          "overall": 3,
+          "reasoning": "The title 'Step-by-step Neapolitan pizza dough tutorial' is straightforward and descriptive, which makes it relevant to the content of the video. However, it lacks elements that create a strong sense of curiosity or urgency. \n\nCuriosity (3/5): The title is clear but doesn't create much of an information gap. It tells the viewer exactly what to expect without hinting at any unique or surprising elements of the process, such as the 72-hour cold ferment.\n\nUrgency (2/5): There is little sense of urgency or time pressure in the title. It doesn't suggest any immediate need to watch the video or imply that viewers might miss out on something if they don't watch it soon.\n\nRelevance (4/5): The title accurately reflects the content of the video, as it is indeed a tutorial on making Neapolitan pizza dough. However, it could be more specific by mentioning the 72-hour cold ferment process, which is a key feature of the video."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by mentioning 'Mastering' and '4 Ingredients,' which suggests simplicity and expertise. The '72-Hour Cold Ferment Technique' adds a unique element that piques interest. Urgency is moderate; while there's no immediate time pressure, the promise of mastering a skill can motivate viewers to watch sooner. Relevance is high as the title accurately reflects the video's content, focusing on the authentic process and specific technique."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by suggesting that there is a common mistake people make with pizza dough, which will be explained in the video. This taps into the viewer's desire to avoid errors and improve their cooking skills. The urgency is moderate; while there is a sense of needing to avoid ruining the dough, the title doesn't convey a strong time-sensitive pressure. The relevance is high as the title directly addresses the main content of the video, which is about the 72-hour fermentation process for pizza dough. Overall, the title is engaging and well-aligned with the video's content."
+        }
+      }
+    },
+    {
+      "video_category": "People & Blogs",
+      "core_promise": "The video shares a personal story of transitioning from a high-paying software engineering job to a successful woodworking business over two years.",
+      "titles": {
+        "baseline_a": "My personal story of leaving tech for woodworking.",
+        "baseline_b": "From $150K Tech Job to Full-Time Woodworker: My 2-Year Journey",
+        "system": "The Shocking Truth Behind My Career Shift to Woodworking"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 4,
+          "overall": 3,
+          "reasoning": "The title 'My personal story of leaving tech for woodworking' is straightforward and descriptive, which affects its scores in different dimensions:\n\n- **Curiosity (3/5):** The title creates a moderate level of curiosity by hinting at a significant career change, which might intrigue viewers interested in personal stories or career transitions. However, it lacks specific details that could heighten curiosity, such as mentioning the success or challenges faced.\n\n- **Urgency (2/5):** There is little sense of urgency in the title. It doesn't imply any time-sensitive information or consequences of missing out on the content, which might be more compelling if it suggested a unique opportunity or a timely trend.\n\n- **Relevance (4/5):** The title is quite relevant to the video summary as it directly reflects the content's focus on a personal career transition from tech to woodworking. However, it could be more specific about the success aspect to fully capture the video's scope.\n\nOverall, the title is clear and relevant but could be improved by adding elements that increase curiosity and urgency."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by highlighting a significant career change from a high-paying tech job to woodworking, which is intriguing and prompts viewers to wonder about the motivations and outcomes of such a transition. The urgency is moderate; while there's a sense of a journey and transformation, there's no immediate time pressure or loss implied. The relevance is high as the title directly reflects the video's content, summarizing the transition and timeframe accurately. Overall, the title is compelling and well-aligned with the video's narrative."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 4,
+          "overall": 4,
+          "reasoning": "The title \"The Shocking Truth Behind My Career Shift to Woodworking\" effectively creates curiosity by suggesting there is an unexpected or surprising reason behind the career change, which encourages viewers to click to find out more. This aligns well with the personal story aspect of the video. The urgency is moderate; while the word \"shocking\" implies a need to know, it doesn't create a strong time-sensitive pressure. The relevance is high as the title directly addresses the content of the video, which is about a career shift from software engineering to woodworking."
+        }
+      }
+    },
+    {
+      "video_category": "Travel & Events",
+      "core_promise": "The video presents five underrated travel destinations in Southeast Asia.",
+      "titles": {
+        "baseline_a": "Five lesser-known Southeast Asia travel spots.",
+        "baseline_b": "5 Hidden Gems in Southeast Asia You Need to Visit!",
+        "system": "5 Secret Destinations in Southeast Asia for Your Next Adventure"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 4,
+          "overall": 3,
+          "reasoning": "The title 'Five lesser-known Southeast Asia travel spots' effectively conveys the content of the video, which is about underrated travel destinations in Southeast Asia. This makes the relevance score high. However, the curiosity score is moderate because while the title suggests there are places viewers might not know about, it doesn't create a strong information gap or intrigue. The urgency score is low because there is no immediate time pressure or sense of loss conveyed by the title; it doesn't suggest that viewers need to watch now or miss out on something critical."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title \"5 Hidden Gems in Southeast Asia You Need to Visit!\" effectively creates curiosity by using the term \"Hidden Gems,\" which suggests that the destinations are not well-known and may offer unique experiences. This creates an information gap as viewers may be intrigued to learn about places they haven't heard of before. The urgency is moderate, as the phrase \"You Need to Visit!\" implies a call to action, but it doesn't convey a strong sense of time pressure or potential loss. The relevance is high because the title accurately reflects the content of the video, which is about underrated travel destinations in Southeast Asia. Overall, the title is engaging and well-suited to the video's content."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title '5 Secret Destinations in Southeast Asia for Your Next Adventure' effectively creates curiosity by using the word 'Secret,' which suggests that the destinations are not widely known and may offer unique experiences. This taps into the viewer's desire to discover something new and exclusive, hence a score of 4 for Curiosity.\n\nIn terms of Urgency, the phrase 'for Your Next Adventure' implies a call to action, encouraging viewers to consider these destinations for their upcoming travel plans. However, it doesn't create a strong sense of immediate time pressure or loss, so it scores a 3.\n\nFor Relevance, the title accurately reflects the video content, which is about underrated travel destinations in Southeast Asia. The use of 'Secret Destinations' aligns well with 'underrated,' and 'Your Next Adventure' suggests travel, matching the video's theme. Therefore, it scores a 5 for Relevance.\n\nOverall, the title is engaging and well-suited to the video's content, earning it an overall score of 4."
+        }
+      }
+    },
+    {
+      "video_category": "News & Politics",
+      "core_promise": "The video delivers a recap of major tech news, including a cloud provider outage, EU app store regulations, a startup's battery recycling breakthrough, and an antitrust ruling against an ad-tech company.",
+      "titles": {
+        "baseline_a": "Weekly tech news recap.",
+        "baseline_b": "Tech News: Major Cloud Outage, EU's App Store Shakeup & $40M Battery Recycling Breakthrough",
+        "system": "Critical Tech News: Cloud Outage Disrupts, Antitrust Ruling Hits Hard"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 2,
+          "urgency": 1,
+          "relevance": 4,
+          "overall": 2,
+          "reasoning": "The title 'Weekly tech news recap' is straightforward but lacks elements that create curiosity or urgency. It doesn't hint at any specific or intriguing details that might entice viewers to click, such as the cloud provider outage or the antitrust ruling. The title is relevant to the content as it accurately describes the video as a recap of tech news, but it doesn't highlight any unique or compelling aspects of the news covered. Overall, the title could be improved by incorporating specific, intriguing elements from the video to enhance curiosity and urgency."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively captures the essence of the video by highlighting the major topics covered, which are likely to pique the interest of viewers interested in tech news. \n\nCuriosity: The title creates a strong information gap by mentioning significant events like a 'Major Cloud Outage' and a '$40M Battery Recycling Breakthrough,' which are intriguing and suggest impactful developments. The mention of 'EU's App Store Shakeup' also adds to the curiosity by implying regulatory changes.\n\nUrgency: The urgency is moderate. While the title mentions significant events, it doesn't convey a strong sense of immediate action or consequence. However, the use of terms like 'Major' and 'Breakthrough' does imply some level of importance.\n\nRelevance: The title is highly relevant as it directly reflects the key topics discussed in the video summary, ensuring that viewers know what to expect from the content."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 4,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by highlighting a 'cloud outage' and an 'antitrust ruling,' which are significant events that could impact viewers. The use of words like 'Critical' and 'Hits Hard' suggests urgency, though it could be stronger by specifying immediate consequences or time-sensitive actions. The relevance is high as the title accurately reflects two major points from the video summary, though it omits the EU app store regulations and the battery recycling breakthrough, which could be seen as a slight mismatch. Overall, the title is engaging and likely to attract viewers interested in tech news."
+        }
+      }
+    },
+    {
+      "video_category": "Education",
+      "core_promise": "The video explains why ice floats on water due to the unique hexagonal lattice structure of frozen water molecules, making ice less dense than liquid water.",
+      "titles": {
+        "baseline_a": "A short explainer on why ice floats.",
+        "baseline_b": "Why Ice Floats: The Unique Science Behind Water's Frozen Mystery",
+        "system": "Why Does Ice Float? The Fascinating 9% Difference Explained"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 4,
+          "overall": 3,
+          "reasoning": "The title 'A short explainer on why ice floats' is straightforward and descriptive, but it lacks elements that strongly drive curiosity or urgency. \n\nCuriosity (3): The title does create some curiosity by posing a question ('why ice floats'), but it doesn't hint at the unique scientific explanation involving the hexagonal lattice structure, which could intrigue viewers more.\n\nUrgency (2): There is little sense of urgency or time pressure in the title. It doesn't suggest that the viewer will miss out on something important or timely by not watching the video.\n\nRelevance (4): The title is relevant to the content as it directly addresses the main topic of the video. However, it could be more specific to better match the detailed explanation provided in the summary.\n\nOverall (3): The title is functional and relevant but could be improved by incorporating elements that enhance curiosity and urgency, such as hinting at the scientific explanation or the surprising nature of the phenomenon."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 2,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by hinting at a 'unique science' and a 'frozen mystery,' which suggests there is an interesting explanation behind a common phenomenon. This taps into the viewer's desire to understand something they might take for granted. However, the urgency is low because there is no immediate consequence or time-sensitive element to learning why ice floats. The relevance is high as the title directly addresses the video's content, promising an explanation of the scientific reason behind ice floating, which aligns well with the summary provided."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by mentioning a 'fascinating 9% difference,' which hints at a specific and intriguing detail that viewers might not know, thus encouraging them to watch the video to learn more. The urgency is moderate; while the title doesn't imply a time-sensitive issue, the use of 'fascinating' adds a slight pressure to satisfy curiosity quickly. The relevance is high as the title directly addresses the video's content about why ice floats, specifically mentioning the density difference, which aligns well with the summary provided."
+        }
+      }
+    },
+    {
+      "video_category": "Gaming",
+      "core_promise": "The video delivers a detailed breakdown of a successful no-damage speedrun attempt of a game, including strategies and tricks used.",
+      "titles": {
+        "baseline_a": "No-damage speedrun attempt and full breakdown.",
+        "baseline_b": "100 Hours, 340 Deaths: My Perfect No-Damage Run Strategy Revealed!",
+        "system": "The Most Intense Speedrun: 100 Hours, No Damage!"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 4,
+          "overall": 3,
+          "reasoning": "The title 'No-damage speedrun attempt and full breakdown' is straightforward but lacks elements that strongly provoke curiosity or urgency. \n\nCuriosity (3): The title does create some curiosity by mentioning a 'no-damage speedrun,' which is a challenging feat, but it doesn't hint at any unique or unexpected elements that might be covered in the video. Adding a specific game name or a unique strategy might increase curiosity.\n\nUrgency (2): There is little urgency in the title. It doesn't suggest any time-sensitive information or imply that viewers might miss out on something if they don't watch immediately.\n\nRelevance (4): The title is relevant to the content as it accurately describes the video\u2019s focus on a no-damage speedrun and its breakdown. However, it could be more specific to enhance relevance, such as mentioning the game or a particular strategy that stands out.\n\nOverall (3): The title is functional and descriptive but could be improved by adding elements that enhance curiosity and urgency, making it more compelling to potential viewers."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by mentioning '100 Hours, 340 Deaths,' which suggests a significant challenge and effort, enticing viewers to learn about the journey and strategies involved. The phrase 'My Perfect No-Damage Run Strategy Revealed!' adds to the curiosity by promising insider knowledge on achieving a difficult feat.\n\nIn terms of urgency, the title scores moderately. While it doesn't imply immediate action or time-sensitive information, the use of 'Revealed!' suggests an exclusive insight that might not be available elsewhere, creating a mild sense of urgency to watch before others.\n\nRelevance is high as the title directly reflects the video's content, focusing on the no-damage speedrun and the strategies used, aligning well with the detailed breakdown promised in the summary. Overall, the title is engaging and well-suited to the video's content, making it likely to attract viewers interested in gaming and speedrunning."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 4,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by highlighting the 'no damage' aspect and the '100 hours' duration, which suggests a significant achievement and effort, enticing viewers to learn more about how it was accomplished. The urgency is moderate; while the title suggests an intense and possibly time-sensitive challenge, it doesn't convey immediate stakes or a time-limited opportunity for the viewer. The relevance is strong as it directly relates to the content of the video, focusing on the no-damage speedrun and the intensity of the attempt. Overall, the title is compelling and aligns well with the video's content, making it likely to attract viewers interested in gaming and speedrunning."
+        }
+      }
+    },
+    {
+      "video_category": "Howto & Style",
+      "core_promise": "The video provides a 20-minute full-body workout using five compound movements without any equipment.",
+      "titles": {
+        "baseline_a": "No-equipment full-body home workout.",
+        "baseline_b": "20-Min Full-Body Workout: No Equipment Needed!",
+        "system": "No Equipment? No Problem! Full Workout in Just 20 Minutes"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 5,
+          "overall": 3,
+          "reasoning": "The title 'No-equipment full-body home workout' is straightforward and accurately reflects the content of the video, which is a 20-minute workout using compound movements without equipment. \n\nCuriosity (3): The title creates a moderate level of curiosity by highlighting the convenience of a 'no-equipment' workout, which might intrigue viewers looking for easy home workout solutions. However, it lacks a unique hook or promise that would significantly increase curiosity.\n\nUrgency (2): The title does not convey a strong sense of urgency. It doesn't imply any time-sensitive benefits or consequences of not watching the video immediately, such as quick results or limited-time access.\n\nRelevance (5): The title is highly relevant to the video content. It clearly communicates the key aspects of the workout: it's full-body, requires no equipment, and can be done at home, aligning perfectly with the video's summary."
+        },
+        "baseline_b": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 5,
+          "overall": 3,
+          "reasoning": "The title effectively communicates the core content of the video, which is a 20-minute full-body workout that requires no equipment. This makes it highly relevant to the video summary. However, the title lacks elements that create a strong sense of curiosity or urgency. While it does mention the convenience of not needing equipment, which might pique some interest, it doesn't introduce a unique or intriguing aspect that would strongly compel viewers to click immediately. Additionally, there is no time-sensitive element or indication of potential loss if the viewer doesn't watch the video right away, which results in a lower urgency score."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by addressing a common problem (lack of equipment) and offering a solution (a full workout). This taps into the viewer's desire to find accessible fitness solutions. The urgency is moderate; while the phrase \"Just 20 Minutes\" suggests a quick and efficient workout, it doesn't strongly convey a sense of immediate action or loss if not watched. The relevance is high as the title accurately reflects the video's content, promising a full workout without equipment in a short time frame. Overall, the title is compelling and well-aligned with the video's theme."
+        }
+      }
+    },
+    {
+      "video_category": "Science & Technology",
+      "core_promise": "The video delivers a comparison of three popular robot vacuums under $300, focusing on their performance in debris collection and mapping capabilities.",
+      "titles": {
+        "baseline_a": "Head-to-head robot vacuum comparison under $300.",
+        "baseline_b": "Battle of the Budget Robot Vacuums: Eufy vs Roborock vs Shark!",
+        "system": "The Surprising Winner in Robot Vacuum Mapping Revealed!"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 4,
+          "overall": 3,
+          "reasoning": "The title 'Head-to-head robot vacuum comparison under $300' is straightforward and clearly indicates a comparison of robot vacuums within a specific budget. \n\nCuriosity: The title creates a moderate level of curiosity (3) by suggesting a direct comparison, which might interest viewers looking for budget-friendly options. However, it lacks specific details that could heighten curiosity, such as mentioning unique features or surprising results.\n\nUrgency: The urgency is low (2) because there is no immediate call to action or indication of time-sensitive information. The title does not suggest any limited-time offers or pressing reasons to watch immediately.\n\nRelevance: The relevance is high (4) as the title accurately reflects the content of the video, which is a comparison of robot vacuums under $300. It aligns well with the summary provided, focusing on performance and mapping capabilities."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title \"Battle of the Budget Robot Vacuums: Eufy vs Roborock vs Shark!\" effectively creates curiosity by framing the comparison as a 'battle,' which suggests a competitive analysis and invites viewers to find out which vacuum performs best. This creates an information gap as viewers are likely curious about the outcome of this 'battle.'\n\nThe urgency is moderate. While the title doesn't explicitly convey a time-sensitive element, the use of 'battle' implies a decisive comparison that might prompt viewers to watch sooner to make informed purchasing decisions, especially if they are currently in the market for a budget robot vacuum.\n\nRelevance is high as the title directly mentions the brands being compared, aligning well with the video summary that focuses on comparing these specific models. The title accurately reflects the content, ensuring viewers know what to expect.\n\nOverall, the title is engaging and relevant, with a good balance of curiosity and urgency, making it likely to attract viewers interested in budget-friendly robot vacuums."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 4,
+          "overall": 4,
+          "reasoning": "The title \"The Surprising Winner in Robot Vacuum Mapping Revealed!\" effectively creates curiosity by suggesting there is an unexpected outcome in the comparison, which can intrigue viewers to find out more. The urgency is moderate; while there is some pressure to discover the 'surprising winner,' it doesn't convey a strong sense of time sensitivity or loss. The relevance is high as the title directly relates to the video's focus on comparing robot vacuums, particularly highlighting the mapping aspect, which is a key feature discussed in the video."
+        }
+      }
+    },
+    {
+      "video_category": "People & Blogs",
+      "core_promise": "The video explains how the speaker paid off $42,000 in credit card debt in 19 months on a $55,000 salary using the debt avalanche method and a part-time job.",
+      "titles": {
+        "baseline_a": "How I paid off $42K in credit card debt.",
+        "baseline_b": "How I Paid Off $42K in Credit Card Debt on a $55K Salary in 19 Months",
+        "system": "From $42,000 Debt to Zero: My Story of Financial Freedom"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 4,
+          "overall": 4,
+          "reasoning": "The title \"How I paid off $42K in credit card debt\" effectively creates curiosity by presenting a significant achievement that prompts viewers to wonder about the methods used. It scores a 4 in curiosity because it hints at a personal story and a potentially unique strategy, which can intrigue viewers. However, it could be more specific to increase curiosity further.\n\nIn terms of urgency, the title scores a 3. While paying off debt is a pressing issue for many, the title does not convey a sense of immediate action or time-sensitive information. Adding a timeframe or emphasizing the speed of the payoff could enhance urgency.\n\nFor relevance, the title scores a 4. It accurately reflects the video's content by focusing on the main achievement of paying off a large debt. However, it could be slightly more aligned with the content by mentioning the method or timeframe, which would provide a clearer expectation of the video's content.\n\nOverall, the title is strong but could be improved by incorporating elements that highlight the timeframe and method used, which would enhance both curiosity and relevance."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by highlighting a significant achievement (paying off $42K debt) on a relatively modest salary, which is likely to intrigue viewers interested in personal finance and debt management. The urgency is moderate; while there is a sense of accomplishment in the timeframe (19 months), it doesn't convey immediate action or loss if not watched. The relevance is high as the title accurately reflects the video's content, focusing on the debt payoff journey, the salary, and the timeframe."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by promising a personal story of overcoming significant debt, which is intriguing to viewers interested in financial success stories. The urgency is moderate; while there is a sense of transformation, the title doesn't imply immediate action or time-sensitive information. The relevance is high as it directly reflects the video's content about paying off debt and achieving financial freedom."
+        }
+      }
+    },
+    {
+      "video_category": "Film & Animation",
+      "core_promise": "The video delivers a five-minute animated short film about a paper airplane navigating back to its owner, created solo over eight months using free software.",
+      "titles": {
+        "baseline_a": "An 8-month solo animated short about a paper airplane.",
+        "baseline_b": "Flutter in the Storm: A Paper Airplane's Journey Home",
+        "system": "The Animated Journey: A Paper Airplane's Return"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 4,
+          "overall": 3,
+          "reasoning": "The title provides a clear and concise description of the video's content, which is a positive aspect for relevance. However, it lacks elements that create a strong sense of curiosity or urgency. The mention of '8-month solo' might intrigue some viewers interested in animation or solo projects, but it doesn't create a significant information gap or time pressure. The title could be improved by hinting at the story or challenges faced during the creation process to enhance curiosity and urgency."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 2,
+          "relevance": 4,
+          "overall": 3,
+          "reasoning": "The title \"Flutter in the Storm: A Paper Airplane's Journey Home\" effectively creates curiosity by suggesting a narrative journey, which is intriguing and prompts viewers to wonder about the challenges faced by the paper airplane. This earns it a high score in curiosity. However, the urgency is low because there is no immediate time-sensitive element or consequence implied in the title, which would compel viewers to watch it immediately. The relevance is strong as the title aligns well with the video's content about a paper airplane's journey, though it could be slightly more specific about the animation aspect or the solo creation process to enhance relevance further. Overall, the title is engaging but lacks a sense of urgency."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 2,
+          "relevance": 4,
+          "overall": 3,
+          "reasoning": "The title 'The Animated Journey: A Paper Airplane's Return' effectively creates curiosity by hinting at a narrative ('A Paper Airplane's Return'), which suggests a story or adventure, thus scoring a 4 in Curiosity. However, it lacks urgency as there is no indication of time-sensitive content or a pressing reason to watch immediately, resulting in a score of 2 for Urgency. In terms of Relevance, the title aligns well with the video's content, which is about an animated journey of a paper airplane, earning a score of 4. Overall, the title is intriguing and relevant but could benefit from a stronger sense of urgency to enhance viewer engagement."
+        }
+      }
+    },
+    {
+      "video_category": "Autos & Vehicles",
+      "core_promise": "The video documents the process of rebuilding a salvage-title 2015 pickup truck engine after a mechanical failure.",
+      "titles": {
+        "baseline_a": "Rebuilding a salvage-title truck engine from scratch.",
+        "baseline_b": "Rebuilding a Salvage 2015 Pickup: Engine Teardown & Reassembly Journey",
+        "system": "Rebuilding a $4,200 Auction Truck Engine: What Went Wrong?"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 4,
+          "overall": 3,
+          "reasoning": "The title 'Rebuilding a salvage-title truck engine from scratch' is straightforward and descriptive, which makes it relevant to the content of the video. It clearly indicates that the video will cover the process of rebuilding a truck engine, which matches the summary provided. However, it lacks elements that create a strong sense of curiosity or urgency. \n\nCuriosity (3): The title does create some curiosity by mentioning 'salvage-title' and 'from scratch,' which might intrigue viewers interested in car restoration or mechanical work. However, it doesn't hint at any unique challenges or unexpected outcomes that might occur during the rebuild, which could enhance curiosity.\n\nUrgency (2): There is little urgency in the title. It doesn't suggest any time-sensitive information or consequences of not watching the video immediately. Adding elements like 'before it's too late' or 'in record time' could increase urgency.\n\nRelevance (4): The title is quite relevant as it directly describes the main activity in the video. It could be slightly improved by specifying the type of truck or engine to attract a more targeted audience, but overall, it aligns well with the content."
+        },
+        "baseline_b": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 5,
+          "overall": 3,
+          "reasoning": "The title effectively communicates the core content of the video, which is the rebuilding of a salvage-title 2015 pickup truck engine. This makes the relevance score high at 5, as it accurately reflects the video's focus. However, the curiosity score is moderate at 3 because while the title indicates a process ('Teardown & Reassembly Journey'), it doesn't create a strong information gap or hint at unexpected challenges or outcomes that might intrigue viewers. The urgency score is low at 2, as there is no immediate time pressure or consequence implied by the title that would compel viewers to watch immediately. Overall, the title is clear and descriptive but lacks elements that would strongly drive curiosity or urgency."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by hinting at a problem ('What Went Wrong?') that viewers will want to understand, especially those interested in automotive repairs or salvage vehicles. The urgency is moderate; while there's some pressure to find out what went wrong, it's not as pressing as a time-sensitive issue. The relevance is high, as the title accurately reflects the video's content about rebuilding a truck engine and the associated challenges."
+        }
+      }
+    },
+    {
+      "video_category": "Music",
+      "core_promise": "The video delivers a detailed breakdown of writing and recording a song in 24 hours for a songwriting challenge, including the creative process and feedback from judges.",
+      "titles": {
+        "baseline_a": "Writing and recording a full song in 24 hours.",
+        "baseline_b": "How I Wrote a Song in 24 Hours: From Chord Progression to Top 3 Finish!",
+        "system": "Missed First Place by a Hair: Our Songwriting Challenge Journey"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 4,
+          "urgency": 4,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively captures the essence of the video by highlighting the challenge of writing and recording a song within a tight timeframe, which aligns well with the content. \n\nCuriosity (4): The title creates a strong information gap by suggesting a challenging and potentially difficult task, prompting viewers to wonder how the process unfolds and whether it can be successfully completed.\n\nUrgency (4): The 24-hour time constraint adds a sense of urgency, as it implies a race against the clock, which can be compelling for viewers interested in time-sensitive challenges.\n\nRelevance (5): The title is highly relevant as it directly reflects the video's content, focusing on the songwriting challenge and the creative process involved in completing it within a day."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 4,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by hinting at a unique challenge (writing a song in 24 hours) and a successful outcome (Top 3 Finish), which makes viewers wonder about the process and results. The urgency is present due to the time constraint of 24 hours, suggesting a fast-paced and intense experience. The relevance is high as the title directly reflects the video's content, focusing on the songwriting process and the competitive aspect. Overall, the title is engaging and well-aligned with the video's theme."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 4,
+          "overall": 4,
+          "reasoning": "The title 'Missed First Place by a Hair: Our Songwriting Challenge Journey' effectively creates curiosity by hinting at a near-win scenario, which can intrigue viewers to find out what happened. The urgency is moderate, as the phrase 'Missed First Place' suggests a competitive element, but it doesn't strongly convey a time-sensitive or high-stakes situation. The relevance is high because the title accurately reflects the video's content about a songwriting challenge and the journey involved, aligning well with the detailed breakdown and feedback aspects mentioned in the summary."
+        }
+      }
+    },
+    {
+      "video_category": "Pets & Animals",
+      "core_promise": "The video documents a 12-week desensitization process for a rescue dog named Biscuit to overcome his fear of other dogs, including specific distance thresholds and the consequences of rushing the process.",
+      "titles": {
+        "baseline_a": "12-week journey helping a fearful rescue dog around other dogs.",
+        "baseline_b": "From Fearful to Free: Biscuit's 12-Week Transformation with Other Dogs",
+        "system": "Don't RUSH: The Risks of Forcing Biscuit's Progress"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 5,
+          "overall": 3,
+          "reasoning": "The title effectively conveys the main content of the video, which is the 12-week process of helping a rescue dog overcome fear. However, it lacks elements that create a strong sense of curiosity or urgency. The phrase '12-week journey' suggests a structured process, but it doesn't hint at unexpected challenges or outcomes that might intrigue viewers. The urgency is low because there's no indication of immediate stakes or time-sensitive elements. The relevance is high as the title accurately reflects the video's content."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively captures the essence of the video by highlighting the transformation of Biscuit over a 12-week period, which aligns well with the content (Relevance: 5). It creates curiosity by suggesting a significant change in Biscuit's behavior, prompting viewers to wonder about the process and outcome (Curiosity: 4). However, the urgency is moderate as the title does not imply a time-sensitive or high-stakes scenario, though the mention of a 12-week timeline adds some pressure to see the results (Urgency: 3). Overall, the title is compelling and accurately reflects the video's content."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by hinting at potential risks involved in the process, which encourages viewers to learn more about what could go wrong. The urgency is moderate; while it suggests a warning ('Don't RUSH'), it doesn't strongly convey immediate consequences or time pressure. The relevance is high as it directly relates to the video's content about the risks of rushing Biscuit's desensitization process."
+        }
+      }
+    },
+    {
+      "video_category": "Sports",
+      "core_promise": "The video explains how the speaker improved their marathon time from 4 hours 12 minutes to 3 hours 21 minutes over four years by making specific changes.",
+      "titles": {
+        "baseline_a": "Four years of marathon data and what actually improved my time.",
+        "baseline_b": "How I Improved My Marathon Time by 51 Minutes: My 3 Game-Changing Strategies",
+        "system": "Avoid These Mistakes: My 4-Year Marathon Journey"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by suggesting that the video will reveal specific insights or data that led to a significant improvement in marathon time. This taps into the audience's desire to learn what specific changes were made. The urgency is moderate; while there's a sense of potential loss in not knowing these improvements, it's not immediate or pressing. The relevance is high as the title directly reflects the content of the video, promising an analysis of marathon data and improvements over time."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by promising to reveal '3 Game-Changing Strategies,' which suggests valuable insights that are not immediately obvious. This creates an information gap that viewers will want to fill by watching the video. The urgency is moderate; while there is some pressure to learn these strategies to improve one's own marathon time, the title does not imply an immediate need or consequence for not watching. The relevance is high as the title directly reflects the content of the video, which is about improving marathon times through specific strategies. Overall, the title is compelling and well-aligned with the video's content."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 4,
+          "overall": 4,
+          "reasoning": "The title \"Avoid These Mistakes: My 4-Year Marathon Journey\" effectively creates curiosity by suggesting that there are common mistakes to avoid, which could intrigue viewers interested in improving their marathon times. The urgency is moderate, as the phrase \"Avoid These Mistakes\" implies a need to act to prevent negative outcomes, but it doesn't convey a strong time-sensitive pressure. The relevance is high because the title accurately reflects the content of the video, which is about the speaker's marathon journey and the mistakes they learned to avoid over four years. Overall, the title is compelling and aligns well with the video's content."
+        }
+      }
+    },
+    {
+      "video_category": "Comedy",
+      "core_promise": "The video delivers an 8-minute stand-up set composed entirely of complaints texted by the creator's mom, performed at an open mic.",
+      "titles": {
+        "baseline_a": "An 8-minute stand-up set built entirely from my mom's texts.",
+        "baseline_b": "Turning My Mom's Texts into Stand-Up Comedy: An 8-Minute Open Mic Adventure!",
+        "system": "Meet the Comedic Genius Behind This Viral Mom Text Stand-Up"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 4,
+          "urgency": 2,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively captures the essence of the video by clearly stating that the stand-up set is based on the creator's mom's texts, which aligns well with the content (Relevance: 5). It creates curiosity by hinting at the unique and potentially humorous nature of the content, as viewers might be intrigued to see how personal texts are transformed into a comedy routine (Curiosity: 4). However, the title lacks a sense of urgency or time-sensitive appeal, as there is no immediate reason for viewers to watch it now rather than later (Urgency: 2). Overall, the title is engaging and relevant, but could benefit from a stronger urgency element."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by suggesting a unique and personal source of comedy material, which is likely to intrigue viewers who are interested in stand-up comedy or personal storytelling. The urgency is moderate; while there is no immediate time pressure, the phrase \"Open Mic Adventure\" adds a slight sense of novelty and exploration that could encourage viewers to watch sooner rather than later. The relevance is high as the title accurately reflects the content of the video, clearly indicating that the video is about a stand-up set based on the creator's mom's texts."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 4,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by suggesting a unique and humorous concept of a stand-up set based on a mom's text complaints, which is intriguing and likely to draw viewers in. The urgency is moderate; while the term 'viral' implies a trending topic that might encourage immediate viewing, it doesn't strongly convey a time-sensitive need to watch. The relevance is high as the title accurately reflects the content of the video, focusing on the comedic aspect and the unique source of the material. Overall, the title is engaging and well-aligned with the video's content, making it likely to attract viewers interested in comedy and viral content."
+        }
+      }
+    },
+    {
+      "video_category": "Entertainment",
+      "core_promise": "The video reveals the earnings of three subway street performers over six months, highlighting the impact of viral moments on their income.",
+      "titles": {
+        "baseline_a": "Six months tracking what subway street performers actually earn.",
+        "baseline_b": "How Much Do Street Performers REALLY Make? Surprising Subway Earnings Revealed!",
+        "system": "From Struggle to Stardom: How a Viral Moment Changed Everything"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by promising insights into the earnings of subway street performers, a topic that is not commonly explored in detail. This information gap is likely to intrigue viewers who are curious about unconventional income sources. The urgency is moderate; while there is some interest in understanding the financial impact of viral moments, the title does not convey a strong sense of time sensitivity or potential loss. The relevance is high as the title accurately reflects the content of the video, which focuses on tracking earnings over a specific period."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by promising to reveal surprising earnings, which suggests an information gap about the true income of street performers. This is likely to intrigue viewers who are curious about unconventional income sources. The urgency is moderate; while the word 'revealed' implies a sense of immediacy, there is no strong time pressure or loss aversion element. The relevance is high as the title directly addresses the content of the video, which is about the earnings of subway street performers. Overall, the title is compelling and well-aligned with the video's content."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 4,
+          "overall": 4,
+          "reasoning": "The title \"From Struggle to Stardom: How a Viral Moment Changed Everything\" effectively creates curiosity by suggesting a dramatic transformation, which is intriguing to potential viewers. The use of \"Viral Moment\" implies a significant event that piques interest. However, the urgency is moderate as there is no immediate call to action or time-sensitive element, though the idea of a life-changing moment does add some pressure to learn more. In terms of relevance, the title aligns well with the video summary, as it hints at the performers' journey and the impact of viral success on their earnings, though it could be slightly more specific about the context (subway performers). Overall, the title is compelling and likely to attract viewers interested in stories of transformation and success."
+        }
+      }
+    },
+    {
+      "video_category": "Nonprofits & Activism",
+      "core_promise": "The video documents the process of building a well in a rural Malawian village and its impact on school attendance.",
+      "titles": {
+        "baseline_a": "Building a well that changed school attendance in a Malawian village.",
+        "baseline_b": "Transforming Lives: How We Built a Well in Rural Malawi and Boosted School Attendance by 22%",
+        "system": "Malawi's Borehole Miracle: A 3-hour Trip Turns into 22% School Attendance Increase"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 3,
+          "urgency": 2,
+          "relevance": 5,
+          "overall": 3,
+          "reasoning": "The title effectively conveys the core content of the video, which is about building a well and its impact on school attendance, thus scoring high on relevance. However, it lacks a strong curiosity factor as it straightforwardly states the outcome without creating much of an information gap. The urgency is low because there is no immediate call to action or time-sensitive element in the title, which might not compel viewers to click immediately."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by hinting at a significant impact ('Boosted School Attendance by 22%') which prompts viewers to wonder how building a well could lead to such a change. This information gap encourages clicks. The urgency is moderate; while the title suggests a positive change, it doesn't imply immediate action or loss, which could be stronger if it highlighted a pressing need or ongoing issue. The relevance is high as the title directly reflects the video's content, focusing on the well-building process and its educational impact, making it clear and informative."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by using the term \"Borehole Miracle,\" which suggests an unexpected or impressive outcome, prompting viewers to wonder how a borehole could lead to such a significant change. The urgency is moderate; while the title mentions a \"3-hour Trip,\" which implies a quick and impactful change, it doesn't strongly convey a sense of immediate action needed from the viewer. The relevance is high as the title directly reflects the video's content about the borehole's impact on school attendance, making it clear what the viewer can expect to learn from the video."
+        }
+      }
+    },
+    {
+      "video_category": "Education",
+      "core_promise": "The video explains why some bridges sway in high wind due to resonant frequency, using the 1940 Tacoma Narrows Bridge collapse as an example.",
+      "titles": {
+        "baseline_a": "Why some bridges sway in wind and others don't -- a resonance explainer.",
+        "baseline_b": "Why Bridges Collapse: The Science Behind Resonant Frequency and the Tacoma Narrows Bridge Disaster",
+        "system": "The Extreme Physics Behind the Tacoma Narrows Bridge Collapse"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by posing a question about why some bridges sway while others do not, which invites viewers to learn about the underlying reasons. This taps into the information gap theory, as viewers may not know the answer and are intrigued to find out. The urgency is moderate; while the topic is interesting, it doesn't convey a strong sense of immediate action or consequence, though the mention of bridge safety could imply some urgency. The relevance is high, as the title directly reflects the content of the video, which is an explanation of resonance in the context of bridge engineering, using a historical example."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by promising to explain a scientific phenomenon ('The Science Behind Resonant Frequency') and linking it to a dramatic historical event ('Tacoma Narrows Bridge Disaster'). This combination is likely to intrigue viewers interested in engineering, physics, or historical disasters. The urgency is moderate; while the title suggests an important topic, it doesn't imply immediate action or consequence, which might reduce the sense of time pressure. However, the relevance is high as the title accurately reflects the video's content, focusing on the science of resonant frequency and its real-world implications, exemplified by the Tacoma Narrows Bridge collapse."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title \"The Extreme Physics Behind the Tacoma Narrows Bridge Collapse\" effectively creates curiosity by hinting at a deeper scientific explanation behind a well-known historical event, which can intrigue viewers interested in physics or engineering. The urgency is moderate; while the title doesn't imply immediate action or consequence, the word \"extreme\" adds a sense of intensity that might prompt viewers to click sooner. The relevance is high as the title directly aligns with the video summary, focusing on the physics and the specific event of the Tacoma Narrows Bridge collapse. Overall, the title is compelling and well-suited to the content, though it could potentially increase urgency by suggesting a broader implication or lesson from the event."
+        }
+      }
+    },
+    {
+      "video_category": "Gaming",
+      "core_promise": "The video demonstrates the challenges of playing the original Doom on the hardest difficulty using only a 1993 keyboard, highlighting differences in gameplay difficulty compared to modern controls.",
+      "titles": {
+        "baseline_a": "Beating the original Doom keyboard-only, the way players did in 1993.",
+        "baseline_b": "Conquering Doom's Hardest Mode with a 1993 Keyboard: A Brutal Retro Challenge!",
+        "system": "1993 Keyboard Challenge: Surviving Doom's Hardest Mode"
+      },
+      "scores": {
+        "baseline_a": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by suggesting a unique challenge of playing Doom with a 1993 keyboard, which is intriguing for both retro gaming enthusiasts and those interested in gaming history. The urgency is moderate; while there is a sense of experiencing something unique, it doesn't convey a strong time-sensitive pressure. The relevance is high as the title accurately reflects the video's content, focusing on the challenge of using outdated controls to play a classic game."
+        },
+        "baseline_b": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title effectively creates curiosity by highlighting the unique challenge of using a 1993 keyboard, which is unusual and intriguing for viewers familiar with modern gaming setups. The urgency is moderate; while there is a sense of a 'brutal challenge,' it doesn't convey a strong time-sensitive element. The relevance is high as the title accurately reflects the video's content, focusing on the difficulty of playing Doom on its hardest mode with outdated equipment."
+        },
+        "system": {
+          "curiosity": 4,
+          "urgency": 3,
+          "relevance": 5,
+          "overall": 4,
+          "reasoning": "The title \"1993 Keyboard Challenge: Surviving Doom's Hardest Mode\" effectively captures the essence of the video content. \n\nCuriosity (4): The title creates a strong information gap by combining the nostalgic element of a \"1993 Keyboard\" with the challenge of \"Doom's Hardest Mode.\" This combination piques interest as viewers may wonder how the old hardware impacts gameplay.\n\nUrgency (3): While the title suggests a challenging and potentially intense experience, it doesn't convey a strong sense of urgency or time pressure. However, the word \"Surviving\" does imply a level of difficulty that might prompt viewers to watch sooner rather than later.\n\nRelevance (5): The title is highly relevant to the video summary. It clearly indicates the focus on using a 1993 keyboard to tackle Doom's hardest difficulty, aligning perfectly with the content described.\n\nOverall (4): The title is engaging and relevant, effectively drawing in viewers interested in retro gaming challenges and the specific difficulties of using outdated technology."
+        }
+      }
+    }
+  ]
+}

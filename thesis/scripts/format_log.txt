@@ -1,0 +1,147 @@
+paragraphs whose cross-refs did not map cleanly: 0
+removed old title block / TOC elements up to first Heading 1
+reference groups extracted: [('Introduction', 15), ('Literature Review', 36), ('Methodology', 20), ('System Requirements Specification', 5), ('Implementation', 7), ('Testing and Evaluation', 1)]
+objectives block moved: 10 elements
+HEAD 1 1 Introduction
+HEAD 2 1.1 Chapter overview
+HEAD 2 1.2 Problem background
+HEAD 3 1.2.1 The video-first internet
+HEAD 3 1.2.2 The algorithmic gatekeeper: CTR and the cold-start loop
+HEAD 3 1.2.3 The expertise bottleneck
+HEAD 3 1.2.4 The rise of LLMs and their generic application gap
+HEAD 2 1.3 Problem statement
+HEAD 3 1.3.1 General problem
+HEAD 3 1.3.2 Specific problem
+HEAD 2 1.4 Research question
+HEAD 3 1.4.1 Primary research question
+HEAD 3 1.4.2 Supporting sub-questions
+HEAD 2 1.5 Research motivation
+HEAD 3 1.5.1 Economic and social motivation
+HEAD 3 1.5.2 Technical motivation
+HEAD 3 1.5.3 Ethical motivation
+HEAD 2 1.6 Research aim
+HEAD 2 1.7 Rich picture of the proposed solution
+HEAD 2 1.8 Resource requirements
+HEAD 3 1.8.1 Hardware
+HEAD 3 1.8.2 Software
+HEAD 2 1.9 Project scope
+HEAD 3 1.9.1 In scope
+HEAD 3 1.9.2 Out of scope
+HEAD 2 1.10 Chapter summary
+HEAD 1 2 Objectives
+HEAD 2 2.1 To identify
+HEAD 2 2.2 To analyse
+HEAD 2 2.3 To design and develop
+HEAD 2 2.4 To evaluate
+HEAD 1 3 Literature Review
+HEAD 2 3.1 Chapter overview
+HEAD 2 3.2 Conceptual map of the literature
+HEAD 2 3.3 Domain overview
+HEAD 3 3.3.1 The video-first internet and the creator economy
+HEAD 3 3.3.2 Click-through rate as the algorithmic gatekeeper
+HEAD 3 3.3.3 Historical evolution: from manual copywriting to AI-assisted generation
+HEAD 2 3.4 Existing systems, frameworks, and designs
+HEAD 3 3.4.1 System 1: manual expert copywriting
+HEAD 3 3.4.2 System 2: YouTube analytics platforms (TubeBuddy, VidIQ)
+HEAD 3 3.4.3 System 3: generic LLM prompting (zero-shot)
+HEAD 3 3.4.4 System 4: clickbait detection systems
+HEAD 3 3.4.5 Comparative summary
+HEAD 2 3.5 Technological analysis
+HEAD 3 3.5.1 Algorithmic analysis
+HEAD 4 3.5.1.1 A1: Large language models, the transformer architecture
+HEAD 4 3.5.1.2 A2: Prompt engineering techniques
+HEAD 4 3.5.1.3 A3: Sentiment analysis, VADER
+HEAD 4 3.5.1.4 A4: Semantic faithfulness, BERTScore
+HEAD 4 3.5.1.5 A5: Natural language inference for faithfulness verification
+HEAD 4 3.5.1.6 A6: Predicted CTR (pCTR), machine learning model
+HEAD 3 3.5.2 Design analysis
+HEAD 4 3.5.2.1 D1: Multi-agent architecture, supervisor pattern
+HEAD 4 3.5.2.2 D2: API wrapper with facade pattern
+HEAD 4 3.5.2.3 D3: Psychological trigger operationalisation
+HEAD 3 3.5.3 Workflow analysis
+HEAD 4 3.5.3.1 W1: Dataset pipeline
+HEAD 4 3.5.3.2 W2: Evaluation workflow
+HEAD 2 3.6 Reflection, research gap justification
+HEAD 2 3.7 Chapter summary
+HEAD 1 4 Methodology
+HEAD 2 4.1 Research paradigm
+HEAD 3 4.1.1 Paradigm: pragmatism
+HEAD 2 4.2 Research approach
+HEAD 3 4.2.1 Approach: abductive
+HEAD 2 4.3 Research strategy
+HEAD 3 4.3.1 Strategy: design science research (DSR)
+HEAD 3 4.3.2 Alternative strategies considered and rejected
+HEAD 2 4.4 Fact collection mechanisms
+HEAD 3 4.4.1 Data ethical considerations
+HEAD 2 4.5 Research methodology
+HEAD 3 4.5.1 Methodology: Peffers’ design science research methodology (DSRM)
+HEAD 2 4.6 Execution workflow
+HEAD 3 4.6.1 Entry point
+HEAD 2 4.7 Project management methodology
+HEAD 3 4.7.1 Methodology: Agile (Scrum-inspired)
+HEAD 3 4.7.2 Alternative considered: PRINCE2
+HEAD 2 4.8 Project timeline
+HEAD 2 4.9 Ethical considerations
+HEAD 3 4.9.1 Deception versus persuasion
+HEAD 3 4.9.2 Data privacy
+HEAD 3 4.9.3 Bias and toxicity in training data
+HEAD 3 4.9.4 Transparency and human oversight
+HEAD 3 4.9.5 Academic integrity
+HEAD 3 4.9.6 Platform policy compliance
+HEAD 2 4.10 Chapter summary
+HEAD 1 5 System Requirements Specification
+HEAD 2 5.1 Chapter overview
+HEAD 2 5.2 Stakeholder analysis
+HEAD 2 5.3 Operationalisation process
+HEAD 2 5.4 Use case diagrams
+HEAD 2 5.5 Class diagram
+HEAD 2 5.6 Activity diagram
+HEAD 2 5.7 Sequence diagrams
+HEAD 2 5.8 Proposed system architecture diagram
+HEAD 2 5.9 Functional requirements
+HEAD 2 5.10 Non-functional requirements
+HEAD 2 5.11 Chapter summary
+HEAD 1 6 Implementation
+HEAD 2 6.1 Chapter overview
+HEAD 2 6.2 Technology stack and justification
+HEAD 2 6.3 Repository and module structure
+HEAD 2 6.4 Analyzer agent
+HEAD 2 6.5 Prompt factory and dynamic prompt database
+HEAD 2 6.6 Generator agent
+HEAD 2 6.7 Predicted-CTR (pCTR) machine learning model
+HEAD 2 6.8 Critic agent
+HEAD 2 6.9 LangGraph orchestration and FastAPI facade
+HEAD 2 6.10 Demonstration frontend
+HEAD 2 6.11 Sample end-to-end system output
+HEAD 2 6.12 Implementation deviations from the plan
+HEAD 2 6.13 Chapter summary
+HEAD 1 7 Results
+HEAD 2 7.1 Chapter overview
+HEAD 2 7.2 Functional test plan and results
+HEAD 2 7.3 Offline evaluation of the pCTR model
+HEAD 2 7.4 System-level evaluation
+HEAD 2 7.5 Non-functional testing
+HEAD 2 7.6 Human evaluation survey: design and results
+HEAD 2 7.7 LLM-as-a-judge evaluation
+HEAD 2 7.8 Comparison against baselines A and B
+HEAD 2 7.9 Review of test strategies and their suitability
+HEAD 2 7.10 Chapter summary
+HEAD 1 8 Discussion and Conclusions
+HEAD 2 8.1 Chapter overview
+HEAD 2 8.2 Accomplishment of the research objectives
+HEAD 3 8.2.1 Objective 2.1: to identify
+HEAD 3 8.2.2 Objective 2.2: to analyse
+HEAD 3 8.2.3 Objective 2.3: to design and develop
+HEAD 3 8.2.4 Objective 2.4: to evaluate
+HEAD 2 8.3 Problems encountered during research and development
+HEAD 2 8.4 Self-reflection on the research process
+HEAD 2 8.5 Real-world application possibilities
+HEAD 2 8.6 Future recommendations
+HEAD 2 8.7 Chapter summary
+tables scaled to text width: 28 of 28
+images scaled to fit: 2 of 14
+ADDED CAPTION: Table 1.1: Hardware resource requirements
+ADDED CAPTION: Table 1.2: Software resource requirements
+ADDED CAPTION: Table 1.3: In-scope items
+ADDED CAPTION: Table 1.4: Out-of-scope items
+ADDED CAPTION: Table 4.1: Alternative research strategies considered and rejected

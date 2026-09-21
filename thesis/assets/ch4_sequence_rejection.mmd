@@ -1,0 +1,28 @@
+sequenceDiagram
+    participant CR as Critic Agent
+    participant PCTR as pCTR Scorer
+    participant VAD as VADER Scorer
+    participant BERT as BERTScore Scorer
+    participant NLI as NLI Scorer (bart-large-mnli)
+
+    loop for each of 5 TitleCandidates
+        CR->>PCTR: score_title(title, category_id)
+        PCTR-->>CR: pctr_score
+        CR->>VAD: compound(title)
+        VAD-->>CR: vader_compound
+        CR->>BERT: bert_similarity(title, core_promise)
+        BERT-->>CR: bert_similarity
+        CR->>NLI: classify(premise=title, hypothesis=core_promise)
+        NLI-->>CR: entailment | neutral | contradiction
+
+        alt NLI label = contradiction
+            CR->>CR: is_valid = False
+            CR->>CR: append to rejection_log
+            CR->>CR: composite_score = 0 (nli_multiplier = 0)
+        else entailment or neutral
+            CR->>CR: is_valid = True
+            CR->>CR: composite_score = 0.50·pCTR + 0.25·|VADER| + 0.25·BERTScore
+        end
+    end
+
+    CR->>CR: top_title = argmax(composite_score) over valid candidates only

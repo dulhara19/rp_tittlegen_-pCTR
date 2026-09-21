@@ -1,0 +1,46 @@
+flowchart TB
+    browser["Browser\n(React + Vite SPA)"]
+
+    subgraph facade["Facade Layer"]
+        api["FastAPI Endpoint\nPOST /generate-titles, GET /health\nCORS-scoped to local dev origin"]
+    end
+
+    subgraph orchestration["Orchestration Layer"]
+        orchestrator["LangGraph State Machine\nSupervisor Pattern:\nAnalyzer to Generator to Critic"]
+    end
+
+    subgraph agents["Agent Layer"]
+        analyzer["Analyzer Agent"]
+        generator["Generator Agent"]
+        critic["Critic Agent"]
+    end
+
+    subgraph validation["Validation & Scoring Layer"]
+        pctr["pCTR Model\n(Random Forest, joblib)"]
+        vader["VADER\n(NLTK)"]
+        bertscore["BERTScore\n(roberta-large)"]
+        nli["NLI\n(facebook/bart-large-mnli)"]
+    end
+
+    subgraph data["Data Layer"]
+        promptdb["Prompt Database\n(ChromaDB vector store)"]
+        model["labeled_titles.csv,\npctr_model.pkl"]
+    end
+
+    llm["GPT-4o\n(OpenAI API)"]
+
+    browser -- "HTTP/JSON" --> api
+    api --> orchestrator
+    orchestrator --> analyzer
+    orchestrator --> generator
+    orchestrator --> critic
+
+    analyzer --> llm
+    generator --> llm
+    generator --> promptdb
+
+    critic --> pctr
+    critic --> vader
+    critic --> bertscore
+    critic --> nli
+    pctr --> model

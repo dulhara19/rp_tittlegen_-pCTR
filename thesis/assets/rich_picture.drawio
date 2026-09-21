@@ -1,0 +1,146 @@
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ── OUTER API WRAPPER CONTAINER ── -->
+    <mxCell id="10" value="API WRAPPER  —  Facade Layer  (FastAPI REST Endpoint)"
+      style="swimlane;startSize=36;fillColor=#eef5fb;strokeColor=#1a3a6e;strokeWidth=3;fontStyle=1;fontSize=13;fontColor=#1a3a6e;rounded=1;arcSize=2;whiteSpace=wrap;html=1;"
+      vertex="1" parent="1">
+      <mxGeometry x="10" y="10" width="1000" height="1600" as="geometry"/>
+    </mxCell>
+
+    <!-- ── INPUT ── -->
+    <mxCell id="20" value="INPUT"
+      style="swimlane;startSize=28;fillColor=#f0f4f8;strokeColor=#2e5fa3;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#ffffff;swimlaneHead=1;fillColor=#2e5fa3;rounded=1;arcSize=5;whiteSpace=wrap;html=1;"
+      vertex="1" parent="10">
+      <mxGeometry x="30" y="55" width="940" height="105" as="geometry"/>
+    </mxCell>
+    <mxCell id="21" value="video_transcript: str  |  video_description: str (optional)&#xa;video_category: str  |  channel_stats: { subscribers, avg_views } (optional)"
+      style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontSize=10;whiteSpace=wrap;"
+      vertex="1" parent="20">
+      <mxGeometry x="10" y="28" width="920" height="67" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrow INPUT → Analyzer -->
+    <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1a3a6e;strokeWidth=2.5;fillColor=#1a3a6e;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
+      edge="1" source="20" target="40" parent="10">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- ── ANALYZER AGENT ── -->
+    <mxCell id="40" value="ANALYZER AGENT"
+      style="swimlane;startSize=28;fillColor=#dce8f5;strokeColor=#1a3a6e;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#ffffff;swimlaneHead=1;fillColor=#1a3a6e;rounded=1;arcSize=3;whiteSpace=wrap;html=1;"
+      vertex="1" parent="10">
+      <mxGeometry x="30" y="210" width="940" height="165" as="geometry"/>
+    </mxCell>
+    <mxCell id="41" value="•  Extract core_promise — what the video actually delivers to the viewer&#xa;•  Identify key_entities — proper nouns, numbers, real stakes in the transcript&#xa;•  Score emotional_potential (0–1) — ceiling of truthful emotional framing&#xa;•  Map content to applicable psychological triggers T1–T7 (Curiosity Gap → Specificity)&#xa;   OUTPUT ➜  Structured Video Brief { core_promise · key_entities · emotional_potential · trigger_candidates }"
+      style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;fontSize=10;whiteSpace=wrap;"
+      vertex="1" parent="40">
+      <mxGeometry x="10" y="30" width="920" height="125" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrow Analyzer → Generator -->
+    <mxCell id="50" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1a3a6e;strokeWidth=2.5;fillColor=#1a3a6e;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
+      edge="1" source="40" target="60" parent="10">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- ── GENERATOR AGENT ── -->
+    <mxCell id="60" value="GENERATOR AGENT"
+      style="swimlane;startSize=28;fillColor=#dce8f5;strokeColor=#1a3a6e;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#ffffff;swimlaneHead=1;fillColor=#1a3a6e;rounded=1;arcSize=3;whiteSpace=wrap;html=1;"
+      vertex="1" parent="10">
+      <mxGeometry x="30" y="430" width="700" height="155" as="geometry"/>
+    </mxCell>
+    <mxCell id="61" value="•  Query Prompt Database via vector similarity → niche-specific few-shot examples&#xa;•  Apply Persona Pattern + Chain-of-Thought (CoT) 4-step reasoning sequence&#xa;•  Generate N=5 candidate titles, one per priority trigger T1–T7&#xa;   OUTPUT ➜  5 × TitleCandidate { title · trigger_used · char_count · word_count }"
+      style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;fontSize=10;whiteSpace=wrap;"
+      vertex="1" parent="60">
+      <mxGeometry x="10" y="30" width="680" height="115" as="geometry"/>
+    </mxCell>
+
+    <!-- ── PROMPT DATABASE ── -->
+    <mxCell id="70" value="PROMPT DATABASE"
+      style="swimlane;startSize=28;fillColor=#fef5e7;strokeColor=#ca6f1e;strokeWidth=2;fontStyle=1;fontSize=10;fontColor=#ffffff;swimlaneHead=1;fillColor=#ca6f1e;rounded=1;arcSize=5;whiteSpace=wrap;html=1;"
+      vertex="1" parent="10">
+      <mxGeometry x="760" y="435" width="210" height="145" as="geometry"/>
+    </mxCell>
+    <mxCell id="71" value="Few-Shot Examples&#xa;(Vector Store)&#xa;ChromaDB / FAISS&#xa;Niche-filtered at query"
+      style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=9.5;fontColor=#784212;whiteSpace=wrap;"
+      vertex="1" parent="70">
+      <mxGeometry x="5" y="30" width="200" height="105" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrow Prompt DB → Generator -->
+    <mxCell id="72" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#ca6f1e;strokeWidth=2;fillColor=#ca6f1e;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;"
+      edge="1" source="70" target="60" parent="10">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrow Generator → Critic -->
+    <mxCell id="80" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1a3a6e;strokeWidth=2.5;fillColor=#1a3a6e;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
+      edge="1" source="60" target="90" parent="10">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- ── CRITIC AGENT ── -->
+    <mxCell id="90" value="CRITIC AGENT"
+      style="swimlane;startSize=28;fillColor=#dce8f5;strokeColor=#1a3a6e;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#ffffff;swimlaneHead=1;fillColor=#1a3a6e;rounded=1;arcSize=3;whiteSpace=wrap;html=1;"
+      vertex="1" parent="10">
+      <mxGeometry x="30" y="640" width="940" height="490" as="geometry"/>
+    </mxCell>
+
+    <!-- Sub-box: pCTR -->
+    <mxCell id="91" value="&lt;b&gt;pCTR MODEL  (Random Forest + XGBoost)&lt;/b&gt;&#xa;→  Predicted CTR score (0–1)  |  Features: title_length · VADER · has_number · trigger_type · all_caps_ratio"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5f0de;strokeColor=#1e6b3a;strokeWidth=1.5;fontSize=9.5;align=left;spacingLeft=10;verticalAlign=middle;"
+      vertex="1" parent="90">
+      <mxGeometry x="20" y="38" width="900" height="80" as="geometry"/>
+    </mxCell>
+
+    <!-- Sub-box: VADER -->
+    <mxCell id="92" value="&lt;b&gt;VADER  Sentiment Analysis&lt;/b&gt;&#xa;→  Arousal proxy: abs(compound)  |  target &gt; 0.5  |  Low arousal → composite score penalty"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d6eaf8;strokeColor=#1a5276;strokeWidth=1.5;fontSize=9.5;align=left;spacingLeft=10;verticalAlign=middle;"
+      vertex="1" parent="90">
+      <mxGeometry x="20" y="128" width="900" height="80" as="geometry"/>
+    </mxCell>
+
+    <!-- Sub-box: BERTScore -->
+    <mxCell id="93" value="&lt;b&gt;BERTScore  Semantic Relevance  (F1)&lt;/b&gt;&#xa;→  Title vs. video summary  |  &lt; 0.30 = off-topic  |  0.30–0.60 = target range  |  &gt; 0.60 = over-descriptive"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8daef;strokeColor=#6c3483;strokeWidth=1.5;fontSize=9.5;align=left;spacingLeft=10;verticalAlign=middle;"
+      vertex="1" parent="90">
+      <mxGeometry x="20" y="218" width="900" height="80" as="geometry"/>
+    </mxCell>
+
+    <!-- Sub-box: NLI (rejection gate) -->
+    <mxCell id="94" value="&lt;b&gt;NLI MODEL  —  facebook/bart-large-mnli&lt;/b&gt;    ⬛  HARD REJECTION GATE&#xa;→  Contradiction ✗ REJECTED + logged   |   Neutral ✓ or Entailment ✓ → passes to composite scoring"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fadbd8;strokeColor=#a93226;strokeWidth=2;fontSize=9.5;align=left;spacingLeft=10;verticalAlign=middle;"
+      vertex="1" parent="90">
+      <mxGeometry x="20" y="308" width="900" height="80" as="geometry"/>
+    </mxCell>
+
+    <!-- Composite formula -->
+    <mxCell id="95" value="Composite Score  =  ( 0.50 × pCTR  +  0.25 × |VADER|  +  0.25 × BERTScore )  ×  NLI_validity_multiplier"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1a3a6e;strokeWidth=1.5;fontSize=10;fontStyle=3;fontColor=#1a3a6e;align=center;verticalAlign=middle;"
+      vertex="1" parent="90">
+      <mxGeometry x="60" y="408" width="820" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrow Critic → Output -->
+    <mxCell id="100" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1a3a6e;strokeWidth=2.5;fillColor=#1a3a6e;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
+      edge="1" source="90" target="110" parent="10">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- ── OUTPUT ── -->
+    <mxCell id="110" value="OUTPUT"
+      style="swimlane;startSize=28;fillColor=#d5f0de;strokeColor=#1e6b3a;strokeWidth=2.5;fontStyle=1;fontSize=11;fontColor=#ffffff;swimlaneHead=1;fillColor=#1e6b3a;rounded=1;arcSize=3;whiteSpace=wrap;html=1;"
+      vertex="1" parent="10">
+      <mxGeometry x="30" y="1185" width="940" height="120" as="geometry"/>
+    </mxCell>
+    <mxCell id="111" value="top_title: str  |  ranked_candidates: list[ScoredTitle]  { pctr_score · vader_compound · bert_similarity · nli_label · composite_score }&#xa;rejection_log: list[str]  —  all deceptive candidates logged with contradiction reason"
+      style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontSize=10;whiteSpace=wrap;"
+      vertex="1" parent="110">
+      <mxGeometry x="10" y="28" width="920" height="82" as="geometry"/>
+    </mxCell>
+
+  </root>
+</mxGraphModel>

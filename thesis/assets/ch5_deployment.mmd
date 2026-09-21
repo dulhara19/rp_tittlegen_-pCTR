@@ -1,0 +1,39 @@
+flowchart TB
+    subgraph CLIENT["Client Layer — Browser"]
+        BROWSER["Demonstration Frontend\n(React + Vite, localhost:5173)"]
+    end
+
+    subgraph SERVER["Server Process — Single Python Process"]
+        direction TB
+        UVICORN["Uvicorn ASGI Server"]
+        FASTAPI["FastAPI Facade\n(system/api/main.py)\nCORS restricted to :5173"]
+        LANGGRAPH["LangGraph Pipeline\n(Analyzer → Generator → Critic)"]
+
+        subgraph INMEM["In-Process, Eagerly Loaded at Startup"]
+            NLIMODEL["facebook/bart-large-mnli\n(~1.6GB, torch)"]
+            BERTMODEL["roberta-large\n(BERTScorer)"]
+            PCTRMODEL["pctr_model.pkl\n(RandomForestClassifier, joblib)"]
+        end
+
+        UVICORN --> FASTAPI --> LANGGRAPH
+        LANGGRAPH --> INMEM
+    end
+
+    subgraph EXTERNAL["External Services"]
+        OPENAI["OpenAI API\nGPT-4o (chat) +\ntext-embedding-3-small"]
+    end
+
+    subgraph DISK["Local Persistent Storage"]
+        CHROMADB["ChromaDB\nsystem/data/prompt_db/\n(~254 few-shot titles)"]
+        MODELFILE["system/models/pctr_model.pkl"]
+    end
+
+    BROWSER -- "HTTPS/JSON\nPOST /generate-titles\nGET /health" --> UVICORN
+    LANGGRAPH -- "structured-output\nchat completions" --> OPENAI
+    LANGGRAPH -- "embedding queries\n(Generator only)" --> OPENAI
+    LANGGRAPH -- "nearest-neighbor retrieval" --> CHROMADB
+    PCTRMODEL -. "loaded once at import" .-> MODELFILE
+
+    style FASTAPI fill:#2b6cb0,color:#ffffff
+    style LANGGRAPH fill:#6b46c1,color:#ffffff
+    style OPENAI fill:#c05621,color:#ffffff

@@ -1,0 +1,33 @@
+sequenceDiagram
+    actor C as Content Creator
+    participant F as Frontend (React SPA)
+    participant API as FastAPI Facade
+    participant A as Analyzer Agent
+    participant G as Generator Agent
+    participant PD as Prompt Database
+    participant CR as Critic Agent
+    participant LLM as GPT-4o
+
+    C->>F: Submit transcript, description, category
+    F->>API: POST /generate-titles
+    API->>API: Validate & sanitize request
+    API->>A: run(video_input)
+    A->>LLM: Structured completion (persona + CoT)
+    LLM-->>A: VideoBrief
+    A-->>API: VideoBrief
+
+    API->>G: run(video_brief, category)
+    G->>PD: retrieve_examples(topic, category, k=5)
+    PD-->>G: niche-relevant example titles
+    G->>LLM: Structured completion (few-shot + CoT)
+    LLM-->>G: 5 raw candidates
+    G-->>API: GeneratorOutput
+
+    API->>CR: run(video_brief, generator_output, category)
+    par per candidate (x5, concurrent)
+        CR->>CR: pCTR + VADER + BERTScore + NLI
+    end
+    CR-->>API: CriticOutput (ranked, top_title)
+
+    API-->>F: 200 OK — video_brief, generator_output, critic_output
+    F-->>C: Render pipeline stages + ranked titles

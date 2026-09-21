@@ -1,0 +1,93 @@
+classDiagram
+    class VideoInput {
+        +str video_transcript
+        +str video_description
+        +str video_category
+        +dict channel_stats
+    }
+
+    class VideoBrief {
+        +str core_promise
+        +List~str~ key_entities
+        +float emotional_potential
+        +List~str~ trigger_candidates
+    }
+
+    class TitleCandidate {
+        +str title
+        +str trigger_used
+        +int char_count
+        +int word_count
+    }
+
+    class GeneratorOutput {
+        +List~TitleCandidate~ candidates
+    }
+
+    class ScoredTitle {
+        +str title
+        +str trigger_used
+        +float pctr_score
+        +float vader_compound
+        +float bert_similarity
+        +str nli_label
+        +float composite_score
+        +bool is_valid
+    }
+
+    class CriticOutput {
+        +List~ScoredTitle~ scored_candidates
+        +str top_title
+        +List~str~ rejection_log
+    }
+
+    class AnalyzerAgent {
+        +run(video_input) VideoBrief
+    }
+
+    class GeneratorAgent {
+        +run(video_brief, category) GeneratorOutput
+    }
+
+    class CriticAgent {
+        +run(video_brief, generator_output, category) CriticOutput
+    }
+
+    class PipelineOrchestrator {
+        +run_pipeline(video_input) PipelineState
+    }
+
+    class PromptDatabase {
+        +retrieve_examples(topic, category, k) List~str~
+    }
+
+    class PCTRScorer {
+        +score_title(title, category_id) tuple
+    }
+
+    class BERTScoreScorer {
+        +bert_similarity(title, core_promise) float
+    }
+
+    class NLIScorer {
+        +classify_nli(title, core_promise) str
+    }
+
+    PipelineOrchestrator --> AnalyzerAgent
+    PipelineOrchestrator --> GeneratorAgent
+    PipelineOrchestrator --> CriticAgent
+
+    AnalyzerAgent ..> VideoInput : reads
+    AnalyzerAgent ..> VideoBrief : produces
+
+    GeneratorAgent ..> VideoBrief : reads
+    GeneratorAgent ..> PromptDatabase : queries
+    GeneratorAgent ..> GeneratorOutput : produces
+    GeneratorOutput "1" *-- "5" TitleCandidate
+
+    CriticAgent ..> GeneratorOutput : reads
+    CriticAgent ..> PCTRScorer : uses
+    CriticAgent ..> BERTScoreScorer : uses
+    CriticAgent ..> NLIScorer : uses
+    CriticAgent ..> CriticOutput : produces
+    CriticOutput "1" *-- "5" ScoredTitle

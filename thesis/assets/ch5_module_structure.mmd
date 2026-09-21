@@ -1,0 +1,73 @@
+flowchart LR
+    subgraph AGENTS["system/agents/"]
+        SCH["schemas.py\n(shared Pydantic contracts)"]
+        AN["analyzer.py"]
+        GEN["generator.py"]
+        CR["critic.py"]
+    end
+
+    subgraph PIPE["system/pipeline/"]
+        GRAPH["graph.py\n(LangGraph StateGraph)"]
+        PDB["prompt_db.py\n(Prompt Factory)"]
+        FEAT["features.py\n(shared feature transform)"]
+        PCTR["pctr_scorer.py"]
+        BERT["bertscore_scorer.py"]
+        NLI["nli_scorer.py"]
+        LLMC["llm_client.py"]
+        CAT["category_map.py"]
+    end
+
+    subgraph API["system/api/"]
+        MAIN["main.py\n(FastAPI Facade)"]
+    end
+
+    subgraph FE["system/frontend/"]
+        APP["App.jsx"]
+        FORM["TitleForm.jsx"]
+        WF["WorkflowView.jsx"]
+    end
+
+    subgraph EVAL["system/evaluation/"]
+        MLEVAL["ml_eval.py"]
+        SYSEVAL["system_eval.py"]
+        JUDGE["judge.py"]
+    end
+
+    subgraph MODELS["system/models/ + data/"]
+        PKL["pctr_model.pkl"]
+        CHROMA["data/prompt_db/\n(ChromaDB)"]
+    end
+
+    AN --> SCH
+    GEN --> SCH
+    CR --> SCH
+    AN --> LLMC
+    GEN --> LLMC
+    GEN --> PDB
+    PDB --> CHROMA
+    CR --> PCTR
+    CR --> BERT
+    CR --> NLI
+    CR --> CAT
+    PCTR --> FEAT
+    PCTR --> PKL
+
+    GRAPH --> AN
+    GRAPH --> GEN
+    GRAPH --> CR
+
+    MAIN --> GRAPH
+    MAIN --> SCH
+
+    APP --> FORM
+    APP --> WF
+    APP -. "HTTP POST /generate-titles" .-> MAIN
+
+    MLEVAL --> PKL
+    MLEVAL --> FEAT
+    SYSEVAL --> GRAPH
+    JUDGE -. "scores demonstration outputs" .-> SYSEVAL
+
+    style MAIN fill:#2b6cb0,color:#ffffff
+    style GRAPH fill:#6b46c1,color:#ffffff
+    style SCH fill:#2f855a,color:#ffffff

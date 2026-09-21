@@ -1,0 +1,43 @@
+flowchart TD
+    A["Critic Agent .run(video_brief, generator_output, video_category)"] --> B["asyncio.gather across all 5 candidates"]
+
+    subgraph C1["Candidate 1 — _score_candidate()"]
+        direction TB
+        C1G["asyncio.gather across 3 scorers"]
+        C1G --> C1A["to_thread: score_title()\npCTR model .predict_proba"]
+        C1G --> C1B["to_thread: bert_similarity()\nBERTScore F1"]
+        C1G --> C1C["to_thread: classify_nli()\nbart-large-mnli"]
+        C1A --> C1S["composite_score =\n(0.50·pCTR + 0.25·|VADER| + 0.25·BERT) × nli_multiplier"]
+        C1B --> C1S
+        C1C --> C1S
+    end
+
+    subgraph C2["Candidate 2 — _score_candidate()"]
+        direction TB
+        C2G["asyncio.gather across 3 scorers"]
+        C2G --> C2A["to_thread: score_title()"]
+        C2G --> C2B["to_thread: bert_similarity()"]
+        C2G --> C2C["to_thread: classify_nli()"]
+        C2A --> C2S["composite_score"]
+        C2B --> C2S
+        C2C --> C2S
+    end
+
+    subgraph C35["Candidates 3–5 — _score_candidate()"]
+        direction TB
+        C35N["same 3-way gather pattern\n(15 blocking calls total across the batch)"]
+    end
+
+    B --> C1
+    B --> C2
+    B --> C35
+
+    C1S --> D["rejection_log built from is_valid == False\n(nli_label == contradiction)"]
+    C2S --> D
+    C35N --> D
+    D --> E["top_title = max(valid_candidates, key=composite_score)"]
+    E --> F["CriticOutput(scored_candidates, top_title, rejection_log)"]
+
+    style A fill:#2b6cb0,color:#ffffff
+    style F fill:#2f855a,color:#ffffff
+    style D fill:#c05621,color:#ffffff

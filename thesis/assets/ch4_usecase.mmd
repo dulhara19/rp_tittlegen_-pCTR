@@ -1,0 +1,12 @@
+flowchart LR
+    creator(["Content Creator"])
+
+    subgraph system["YouTube Title Optimizer — API Wrapper"]
+        uc1(["UC1: Generate Optimized Titles"])
+        uc2(["UC2: Review Scored Candidates & Rejection Log"])
+        uc3(["UC3: Check System Health"])
+    end
+
+    creator --> uc1
+    creator --> uc2
+    creator --> uc3

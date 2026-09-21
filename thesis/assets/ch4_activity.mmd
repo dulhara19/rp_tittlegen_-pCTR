@@ -1,0 +1,28 @@
+flowchart TD
+    start([Start]) --> validate[Validate & sanitize request:\nstrip HTML, check word count]
+    validate --> validCheck{"≥ 50 words?"}
+    validCheck -- No --> err422[Return HTTP 422\nvalidation error]
+    err422 --> stop1([End])
+
+    validCheck -- Yes --> analyze[Analyzer Agent:\nextract VideoBrief]
+    analyze --> analyzeErr{Analyzer\nfailed?}
+    analyzeErr -- Yes --> err502a[Return HTTP 502]
+    err502a --> stop2([End])
+
+    analyzeErr -- No --> generate[Generator Agent:\nretrieve few-shot examples,\ndraft 5 title candidates]
+    generate --> genErr{Generator\nfailed?}
+    genErr -- Yes --> err502b[Return HTTP 502]
+    err502b --> stop3([End])
+
+    genErr -- No --> critic[Critic Agent:\nscore each candidate]
+    critic --> parallel[For each of 5 candidates,\nrun pCTR, VADER, BERTScore,\nNLI concurrently]
+    parallel --> nliCheck{NLI label =\ncontradiction?}
+    nliCheck -- Yes --> reject[Hard-reject:\nadd to rejection_log,\nis_valid = False]
+    nliCheck -- No --> keep[Keep candidate:\ncompute composite_score]
+    reject --> merge[Collect all scored candidates]
+    keep --> merge
+
+    merge --> rank[Rank valid candidates\nby composite_score]
+    rank --> selectTop[Select top_title]
+    selectTop --> respond[Return HTTP 200:\nvideo_brief, generator_output,\ncritic_output]
+    respond --> stop4([End])
